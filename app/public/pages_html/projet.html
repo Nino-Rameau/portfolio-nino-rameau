@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets</title>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/projet.css" rel="stylesheet" />
+    <link rel="icon" href="../assets/img/favicon.png" />
+
+    <!--typo google front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <img class="img_header" src="../assets/img/logo.svg" />
+      <a href="../index.html"><button>Accueil</button></a>
+      <a href="competence.html"><button>Competence</button></a>
+      <a href="projet.html"><button>Projets</button></a>
+      <a href="charte_graphique.html"><button>Charte Graphique</button></a>
+      <a href="cv.html"><button>Mon CV</button></a>
+      <a href="contact.html"><button>Me contacter</button></a>
+    </header>
+
+    <br>
+
+    <main>
+      <h1>Voici des projets que j'ai réalisé :​</h1>
+
+      <h2>Interview d'un Etudiant et resumé sous forme d'un carrousel (10/2024)</h2>
+      <h2>Site de mini-jeux en python, HTML, CSS, JS, et MySQL (01/2024)</h2>
+      <h2>Gestion de badge RFID avec Python et Mysql (11/2023)</h2>
+      <h2>Quiz sur la Guyane (05/2023)</h2>
+      <h2>Architecture urbaine sur python avec turtle (03/2023)</h2>
+
+      <div class="colone">
+        <div class="elt">
+          <h1>Interview d'un étudiant :</h1>
+          <p>
+            Projet d’Interview d’Étudiant en Alternance : J’ai réalisé une interview et un carrousel de présentation pour un étudiant de la Normandie Web School, actuellement en alternance chez Sciencethic / Sonodis, à Normanville.
+            <br><br>
+            Réalisé en octobre 2024
+          </p>
+        </div>
+
+        <div class="elt">  
+          <div class="carousel">
+            <input type="radio" name="slides1" id="slide1" checked />
+            <input type="radio" name="slides1" id="slide2" />
+            <input type="radio" name="slides1" id="slide3" />
+            <input type="radio" name="slides1" id="slide4" />
+            <input type="radio" name="slides1" id="slide5" />
+            <input type="radio" name="slides1" id="slide6" />
+            <input type="radio" name="slides1" id="slide7" />
+            <input type="radio" name="slides1" id="slide8" />
+          
+            <div class="slides">
+              <div class="slide"><img src="../assets/img/interview/1.png" alt="Image 1" /></div>
+              <div class="slide"><img src="../assets/img/interview/2.png" alt="Image 2" /></div>
+              <div class="slide"><img src="../assets/img/interview/3.png" alt="Image 3" /></div>
+              <div class="slide"><img src="../assets/img/interview/4.png" alt="Image 4" /></div>
+              <div class="slide"><img src="../assets/img/interview/5.png" alt="Image 5" /></div>
+              <div class="slide"><img src="../assets/img/interview/6.png" alt="Image 6" /></div>
+              <div class="slide"><img src="../assets/img/interview/7.png" alt="Image 7" /></div>
+              <div class="slide"><img src="../assets/img/interview/8.png" alt="Image 8" /></div>
+            </div>
+          
+            <div class="navigation">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+              <label for="slide5"></label>
+              <label for="slide6"></label>
+              <label for="slide7"></label>
+              <label for="slide8"></label>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="colone">
+        <div class="elt">
+          <div class="carousel">
+            <input type="radio" name="slides2" id="slide9" checked />
+            <input type="radio" name="slides2" id="slide10" />
+            <input type="radio" name="slides2" id="slide11" />
+            <input type="radio" name="slides2" id="slide12" />
+          
+            <div class="slides">
+              <div class="slide"><img src="../assets/img/mini-jeux/jeu.png" alt="Mini-jeux 1" /></div>
+              <div class="slide"><img src="../assets/img/mini-jeux/morpion.png" alt="Mini-jeux 2" /></div>
+              <div class="slide"><img src="../assets/img/mini-jeux/snake.png" alt="Mini-jeux 3" /></div>
+              <div class="slide"><img src="../assets/img/mini-jeux/classement.png" alt="Mini-jeux 4" /></div>
+            </div>
+          
+            <div class="navigation">
+              <label for="slide9"></label>
+              <label for="slide10"></label>
+              <label for="slide11"></label>
+              <label for="slide12"></label>
+            </div>
+          </div>  
+          <p>Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :</p>  
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub"> <img alt="logo github" src="../assets/img/github.png"/> </a>
+        </div>  
+
+        <div class="elt">
+          <h1>Site de mini-jeux</h1>
+          <p>Ce projet est un site web local de mini-jeux interactifs, incluant des jeux comme le Morpion et le Snake. Le site est développé avec Python et le module Flask. Les pages web sont créées en HTML, CSS et JavaScript, et une base de données MySQL est intégrée pour gérer les scores et les profils des joueurs.
+            <br><br>
+            Réalisé en Janvier 2024</p>
+        </div>
+      </div>
+
+      <div class="colone">
+        <div class="elt">
+          <h1>Gestion de badges RFID en Python et MySQL</h1>
+          <p>Le programme permet de gérer les données des badges RFID via une interface en ligne de commande.
+            Il est développé en Python et est connecté à une base de données MySQL, il permet d’afficher, de modifier, de supprimer des informations de manière organisée.
+            <br><br>
+            Réalisé en novembre 2023</p>
+        </div>
+        
+        <div class="elt">
+          <img src="../assets/img/badge_RFID/img1.png" />
+          <p>Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :</p>  
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub"> <img alt="logo github" src="../assets/img/github.png"/> </a>
+        </div>
+      </div>
+
+      <div class="colone">
+        <div class="elt">
+          <div class="carousel">
+            <input type="radio" name="slides3" id="slide13" checked />
+            <input type="radio" name="slides3" id="slide14" />
+            <input type="radio" name="slides3" id="slide15" />
+          
+            <div class="slides">
+              <div class="slide"><img src="../assets/img/quiz_guyane/page_1.png" alt="image quiz guyane 1" /></div>
+              <div class="slide"><img src="../assets/img/quiz_guyane/page_2.png" alt="image quiz guyane 2" /></div>
+              <div class="slide"><img src="../assets/img/quiz_guyane/page_3.png" alt="image quiz guyane 3" /></div>
+            </div>
+          
+            <div class="navigation">
+              <label for="slide13"></label>
+              <label for="slide14"></label>
+              <label for="slide15"></label>
+            </div>
+          </div>
+          <p>Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :</p>  
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub"> <img alt="logo github" src="../assets/img/github.png"/> </a>  
+        </div>
+
+        <div class="elt">
+          <h1>Quiz sur la Guyane</h1>
+          <p>J’ai créé un site web de quiz sur la Guyane. Le site utilise les langages HTML, CSS et Python avec Flask.  C’est mon premier projet web, qui m’a permis de découvrir le développement de sites.
+            <br><br>
+            Réalisé en mai 2023</p>
+        </div>
+      </div>
+
+      <div class="colone">
+        <div class="elt">
+          <h1>Projet Architecture urbaine sur turtle</h1>
+          <p>Ce projet Python utilise le module Turtle pour créer un dessin.
+            Le code génère un ciel, des nuages, un soleil et une rue composée d’immeubles. 
+            Chaque immeuble a des murs colorés et un nombre d’étages aléatoires, ainsi que des fenêtres et un toit.
+            <br><br>
+            Réalisé en mars 2023</p>
+        </div>
+        
+        <div class="elt">
+          <img src="../assets/img/ville_turtle/ville.png" />
+          <p>Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :</p>  
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub"> <img alt="logo github" src="../assets/img/github.png"/> </a>
+        </div>
+      </div>
+
+    </main>
+
+    <br>
+
+    <footer>
+      <div class="coloneFoother">
+        <div class="eltFoother texteFoother">
+          Copyright © 2024 nino-rameau | Propulsé par nino-rameau
+          <br>
+          Mentions légales | Conditions Générales
+        </div>
+        <div class="eltFoother linkedin">
+          <a class="lien" href="https://www.linkedin.com/in/nino-rameau-1a0636332/" title="linkedIn"> <img alt="logo linkedIn" src="../assets/img/linkedin.png" /> </a>
+        </div>
+        <div class="eltFoother github">
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub"> <img alt="logo github" src="../assets/img/github.png" /> </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

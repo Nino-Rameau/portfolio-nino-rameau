@@ -1,0 +1,140 @@
+body{
+  background-color: #4269B1;
+}
+
+/* HEADER */
+
+header {
+  height: 5em;
+  margin: auto;
+  border: solid #000000;
+}
+
+.img_header {
+  width: 5em;
+}
+
+button {
+  border: none;
+  color: #acddf6;
+  background-image: linear-gradient(30deg, #28337E,#4269B1, #ACDDF6);
+  border-radius: 20px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: "Orbitron", monospace;
+  font-size: 1.25em;
+  padding: 0.6em 1.5em;
+  
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+/*FOOTER*/
+
+.lien img {
+  width: 3em;
+}
+
+footer {
+  height: 5em;
+  border: solid #000000;
+}
+
+.coloneFoother{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;    
+  grid-template-rows: 2fr;
+  background-color: #4269B1;
+}
+
+.eltFoother {
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texteFoother{
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.github{
+  align-items: start;
+}
+
+.linkedin{
+  align-items:end;
+}
+
+
+/* texte */
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.25em;
+  color: black;
+  text-justify: distribute;
+  margin: 2em 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Orbitron", monospace;
+  color: black;
+  
+}
+
+h1{
+  text-align: center;
+  font-size: 2.5em;
+  margin: 40px 40px 60px 60px;
+  background-color: #ffffff;
+}
+
+h2{
+  text-align: left;
+  font-size: 1.4em;
+}
+
+h3{
+  font-size: 1.2em;
+}
+
+h4{
+  font-size: 1.1em;
+}
+
+.photo_nino {
+  height: 10em;
+  border-radius: 100%;
+}
+
+
+
+/* 2 COLONE */
+
+.colone{
+  display: grid;
+  grid-template-columns: 1fr 1fr;    
+  grid-template-rows: 3fr;
+  margin: 2em 1em;  /* 2 gauche droite et 1 haut bas */
+  background-color: #4269B1;
+}
+
+.elt {
+  background-color: #ffffff; 
+  padding: 1em;
+  /* border-radius: 1em;        A REFAIRE POUR ARRONDIR QUE LES 4 COIN PAS LE MILIEU */   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
