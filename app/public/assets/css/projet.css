@@ -1,3 +1,8 @@
+.img_projet{
+  width: 100%;
+  height: auto;
+}
+
 /* CAROUSEL */
 
 .carousel {
@@ -24,6 +29,7 @@
   .slide img {
     width: 100%;
     display: block;
+    height: auto;
   }
   
   input[type="radio"] {
