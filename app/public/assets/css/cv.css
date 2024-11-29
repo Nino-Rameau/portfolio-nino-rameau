@@ -1,21 +1,25 @@
-/* CV */ 
+/* CV */
 
-#barre_principal{
-    width:100%;       /* decalage barre*/
-    height: 15px;     /* largeur barre */
-    z-index: 10;
-    background-color:#4269B1;
-    border:  solid 2px black;   /* temporaire*/
-    transform: rotate(115deg);
-  }
-  
-  .cv{
-    background-color: #ffffff;
-    margin: 5em 20em;
-  }
-  
-  .img_cv{
-    width: 100px;
-    height: 100px;
-  }
-  
+#barre_principal {
+  width: 100%; /* decalage barre*/
+  height: 15px; /* largeur barre */
+  z-index: 10;
+  background-color: #4269b1;
+  border: solid 2px black; /* temporaire*/
+  transform: rotate(115deg);
+}
+
+.cv {
+  background-color: #ffffff;
+  margin: 5em 20em;
+}
+
+.img_cv {
+  width: 100px;
+  height: 100px;
+}
+
+li {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.25em;
+}

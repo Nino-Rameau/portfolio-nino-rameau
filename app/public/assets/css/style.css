@@ -1,5 +1,5 @@
-body{
-  background-color: #4269B1;
+body {
+  background-color: #4269b1;
 }
 
 /* HEADER */
@@ -8,21 +8,21 @@ header {
   height: 5em;
   margin: auto;
   border-bottom: solid 1px #000000;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  gap: 1em; 
-  background-color: #4269B1; 
-  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: #4269b1;
+  overflow: hidden;
 }
 
 .img_header {
-  width: auto; 
-  max-width: 10%; 
-  height: auto; 
-  max-height: 5em; 
-  position: absolute; 
-  left: 1em; 
+  width: auto;
+  max-width: 10%;
+  height: auto;
+  max-height: 5em;
+  position: absolute;
+  left: 1em;
 }
 
 button {
@@ -39,6 +39,15 @@ button {
   outline: none;
 }
 
+header a:hover {
+  scale: 1.1;
+  color: #ffffff;
+  background-color: black;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 20px;
+}
+
 /*FOOTER*/
 
 .lien img {
@@ -50,11 +59,11 @@ footer {
   border: solid #000000;
 }
 
-.coloneFoother{
+.coloneFoother {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;    
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr;
-  background-color: #4269B1;
+  background-color: #4269b1;
 }
 
 .eltFoother {
@@ -65,20 +74,19 @@ footer {
   justify-content: center;
 }
 
-.texteFoother{
+.texteFoother {
   font-family: "IBM Plex Mono", monospace;
   text-align: center;
   font-size: 0.75em;
 }
 
-.github{
+.github {
   align-items: start;
 }
 
-.linkedin{
-  align-items:end;
+.linkedin {
+  align-items: end;
 }
-
 
 /* texte */
 
@@ -90,29 +98,31 @@ p {
   margin: 2em 1em;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Orbitron", monospace;
   color: black;
-  
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 2.5em;
   margin: 40px 40px 60px 60px;
   background-color: #ffffff;
 }
 
-h2{
+h2 {
   text-align: left;
   font-size: 1.4em;
 }
 
-h3{
+h3 {
   font-size: 1.2em;
 }
 
-h4{
+h4 {
   font-size: 1.1em;
 }
 
@@ -121,24 +131,25 @@ h4{
   border-radius: 100%;
 }
 
-
-
 /* 2 COLONE */
 
-.colone{
+.colone {
   display: grid;
-  grid-template-columns: 1fr 1fr;   
-  margin: 2em 1em;  /* 2 gauche droite et 1 haut bas */
-  background-color: #4269B1;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 1em; /* 2 gauche droite et 1 haut bas */
+  background-color: #4269b1;
 }
 
 .elt {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   padding: 1em;
-  /* border-radius: 1em;        A REFAIRE POUR ARRONDIR QUE LES 4 COIN PAS LE MILIEU */   
+  /* border-radius: 1em;        A REFAIRE POUR ARRONDIR QUE LES 4 COIN PAS LE MILIEU */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.pas_point {
+  list-style-type: none;
+}

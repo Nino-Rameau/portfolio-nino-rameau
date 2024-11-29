@@ -8,24 +8,26 @@
     <link rel="icon" href="../assets/img/favicon.png" />
 
     <!--typo google front -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Orbitron:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <img class="img_header" src="../assets/img/logo.svg" />
-      <a href="../index.html"><button>Accueil</button></a>
-      <a href="competence.html"><button>Competence</button></a>
-      <a href="projet.html"><button>Projets</button></a>
-      <a href="charte_graphique.html"><button>Charte Graphique</button></a>
-      <a href="cv.html"><button>Mon CV</button></a>
-      <a href="contact.html"><button>Me contacter</button></a>
+      <nav>
+        <img class="img_header" src="../assets/img/logo.svg" />
+        <a href="../index.html"><button>Accueil</button></a>
+        <a href="competence.html"><button>Competence</button></a>
+        <a href="projet.html"><button>Projets</button></a>
+        <a href="charte_graphique.html"><button>Charte Graphique</button></a>
+        <a href="cv.html"><button>Mon CV</button></a>
+        <a href="contact.html"><button>Me contacter</button></a>
+      </nav>
     </header>
-
-    <br>
 
     <main>
       <h1>Contactez - moi :</h1>
@@ -34,31 +36,48 @@
         réseaux sociaux.
       </p>
 
-      <input type="text" placeholder="Nom et Prénom" required /><br />
-      <input type="email" placeholder="email" required /><br />
-      <input type="text" placeholder="Objet" required /><br />
-      <input type="text" placeholder="Message" required /><br />
-      <input type="checkbox" required /> J'autorise ce site à conserver les données transmises via ce formulaire.
-    </main>
+      <form>
+        <label for="nom_prenom">Nom et Prénom</label>
+        <input type="text" id="nom_prenom" maxlength="25" required />
 
-    <br>
+        <label for="email">email</label>
+        <input type="email" id="email" required />
+
+        <label for="objet">Objet</label>
+        <input type="text" id="objet" maxlength="40" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" maxlength="500" required></textarea>
+
+        <input type="checkbox" required /> J'autorise ce site à conserver les
+        données transmises via ce formulaire.
+
+        <input type="submit" value="envoyer" />
+      </form>
+    </main>
 
     <footer>
       <div class="coloneFoother">
         <div class="eltFoother texteFoother">
           Copyright © 2024 nino-rameau | Propulsé par nino-rameau
-          <br>
+          <br />
           Mentions légales | Conditions Générales
         </div>
         <div class="eltFoother linkedin">
-          <a class="lien" href="https://www.linkedin.com/in/nino-rameau-1a0636332/" title="linkedIn"> <img alt="logo linkedIn" src="../assets/img/linkedin.png" /> </a>
+          <a
+            class="lien"
+            href="https://www.linkedin.com/in/nino-rameau-1a0636332/"
+            title="linkedIn"
+          >
+            <img alt="logo linkedIn" src="../assets/img/linkedin.png" />
+          </a>
         </div>
         <div class="eltFoother github">
-          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub"> <img alt="logo github" src="../assets/img/github.png" /> </a>
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub">
+            <img alt="logo github" src="../assets/img/github.png" />
+          </a>
         </div>
       </div>
     </footer>
-
   </body>
-
 </html>
