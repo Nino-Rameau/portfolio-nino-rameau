@@ -1,5 +1,11 @@
+:root {
+  --bleu-fonce: #28337e;
+  --bleu-milieu: #4269b1;
+  --bleu-clair: #acddf6;
+}
+
 body {
-  background-color: #4269b1;
+  background-color: var(--bleu-milieu);
 }
 
 /* HEADER */
@@ -12,7 +18,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  background-color: #4269b1;
+  background-color: var(--bleu-milieu);
   overflow: hidden;
 }
 
@@ -25,7 +31,9 @@ header {
   left: 1em;
 }
 
-button {
+/* BOUTON */
+
+.btn_header {
   border: none;
   color: #ffffff;
   background-color: #000000;
@@ -37,14 +45,35 @@ button {
   font-weight: normal;
   padding: 0.6em 1.5em;
   outline: none;
+  text-decoration: none;
 }
 
-header a:hover {
+.btn_header:hover {
   scale: 1.1;
   color: #ffffff;
-  background-color: black;
-  border-width: 1px;
-  border-color: #ffffff;
+  background-color: #000000;
+  border-radius: 20px;
+}
+
+.btn_sommaire a {
+  border: none;
+  color: #ffffff;
+  background-color: var(--bleu-clair);
+  border-radius: 20px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: "Orbitron", monospace;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.4em 1.3em;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn_sommaire a:hover {
+  scale: 1.1;
+  color: #ffffff;
+  background-color: var(--bleu-clair);
   border-radius: 20px;
 }
 
@@ -61,9 +90,9 @@ footer {
 
 .coloneFoother {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 2fr;
-  background-color: #4269b1;
+  background-color: var(--bleu-milieu);
 }
 
 .eltFoother {
@@ -77,7 +106,6 @@ footer {
 .texteFoother {
   font-family: "IBM Plex Mono", monospace;
   text-align: center;
-  font-size: 0.75em;
 }
 
 .github {
@@ -86,6 +114,13 @@ footer {
 
 .linkedin {
   align-items: end;
+}
+
+.texteFoother {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.25em;
+  color: black;
+  text-justify: distribute;
 }
 
 /* texte */
@@ -110,7 +145,7 @@ h1 {
   text-align: center;
   font-size: 2.5em;
   margin: 40px 40px 60px 60px;
-  background-color: #ffffff;
+  background-color: var(--bleu-clair);
 }
 
 h2 {
@@ -137,11 +172,11 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 2em 1em; /* 2 gauche droite et 1 haut bas */
-  background-color: #4269b1;
+  background-color: var(--bleu-milieu);
 }
 
 .elt {
-  background-color: #ffffff;
+  background-color: var(--bleu-clair);
   padding: 1em;
   /* border-radius: 1em;        A REFAIRE POUR ARRONDIR QUE LES 4 COIN PAS LE MILIEU */
   display: flex;
@@ -151,5 +186,6 @@ h4 {
 }
 
 .pas_point {
+  /* sur les liste*/
   list-style-type: none;
 }

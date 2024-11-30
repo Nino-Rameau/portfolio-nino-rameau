@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Portfolio Nino Rameau | Contactez-moi</title>
+    <meta name="description" Laissez-moi un message sur cette page. />
+    <meta name="autor" Nino Rameau />
     <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/contact.css" rel="stylesheet" />
     <link rel="icon" href="../assets/img/favicon.png" />
 
     <!--typo google front -->
@@ -20,12 +23,12 @@
     <header>
       <nav>
         <img class="img_header" src="../assets/img/logo.svg" />
-        <a href="../index.html"><button>Accueil</button></a>
-        <a href="competence.html"><button>Competence</button></a>
-        <a href="projet.html"><button>Projets</button></a>
-        <a href="charte_graphique.html"><button>Charte Graphique</button></a>
-        <a href="cv.html"><button>Mon CV</button></a>
-        <a href="contact.html"><button>Me contacter</button></a>
+        <a href="../index.html" class="btn_header">Accueil</a>
+        <a href="competence.html" class="btn_header">Compétences</a>
+        <a href="projet.html" class="btn_header">Projets</a>
+        <a href="charte_graphique.html" class="btn_header">Charte Graphique</a>
+        <a href="cv.html" class="btn_header">Mon CV</a>
+        <a href="contact.html" class="btn_header">Me contacter</a>
       </nav>
     </header>
 
@@ -37,22 +40,25 @@
       </p>
 
       <form>
-        <label for="nom_prenom">Nom et Prénom</label>
+        <label for="nom_prenom">Nom et Prénom*</label>
         <input type="text" id="nom_prenom" maxlength="25" required />
 
-        <label for="email">email</label>
+        <label for="email">email*</label>
         <input type="email" id="email" required />
 
-        <label for="objet">Objet</label>
+        <label for="objet">Objet*</label>
         <input type="text" id="objet" maxlength="40" required />
 
-        <label for="message">Message</label>
+        <label for="message">Message*</label>
         <textarea id="message" rows="5" maxlength="500" required></textarea>
 
-        <input type="checkbox" required /> J'autorise ce site à conserver les
-        données transmises via ce formulaire.
+        <label for="fichier">Déposer un fichier</label>
+        <input type="file" size="10mo" id="fichier" />
 
-        <input type="submit" value="envoyer" />
+        <input type="checkbox" /> J'autorise ce site à conserver les données
+        transmises via ce formulaire.
+
+        <input type="submit" value="Envoyer" />
       </form>
     </main>
 
