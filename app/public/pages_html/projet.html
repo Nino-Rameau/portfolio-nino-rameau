@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nino Rameau | Mes projets</title>
-    <meta name="description" Présentation de mes projets numériques. />
-    <meta name="autor" Nino Rameau />
+    <meta
+      name="description"
+      content="Présentation de mes projets numériques."
+    />
+    <meta name="autor" content="Nino Rameau" />
     <link href="../assets/css/style.css" rel="stylesheet" />
     <link href="../assets/css/projet.css" rel="stylesheet" />
     <link rel="icon" href="../assets/img/favicon.png" />
@@ -22,7 +25,7 @@
   <body>
     <header>
       <nav>
-        <img class="img_header" src="../assets/img/logo.svg" />
+        <img class="img_header" src="../assets/img/logo.svg" alt="Mon logo" />
         <a href="../index.html" class="btn_header">Accueil</a>
         <a href="competence.html" class="btn_header">Compétences</a>
         <a href="projet.html" class="btn_header">Projets</a>
@@ -36,6 +39,15 @@
       <h1>Voici des projets que j'ai réalisé :​</h1>
 
       <nav class="sommaire">
+        <a href="#normandie-blog-school" class="btn_sommaire"
+          >Projet Normandie Blog School (12/2024)</a
+        >
+        <a href="#club-eco-st-sever" class="btn_sommaire"
+          >Club Eco Saint Sever (12/2024)</a
+        >
+        <a href="#projet-bde" class="btn_sommaire"
+          >Projet pour le BDE : tournois de five (10/2024)</a
+        >
         <a href="#interview" class="btn_sommaire"
           >Interview d'un étudiant et résumé sous forme d'un carrousel
           (10/2024)</a
@@ -54,16 +66,86 @@
         >
       </nav>
 
+      <div class="colone" id="normandie-blog-school">
+        <div class="elt">
+          <img class="img_projet" src="../assets/img/" />
+          <p>
+            Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :
+          </p>
+          <a class="lien" href="https://github.com/Nino-Rameau" title="GitHub">
+            <img alt="logo github" src="../assets/img/github.png" />
+          </a>
+        </div>
+        <div class="elt">
+          <h1>Normandie Blog School</h1>
+          <p>Description</p>
+          <p>Réalisé en</p>
+        </div>
+      </div>
+
+      <div class="colone" id="club-eco-st-sever">
+        <div class="elt">
+          <h1>Projet Club Eco Saint Sever</h1>
+          <p>description</p>
+          <p>Réalisé en</p>
+        </div>
+        <div class="elt">
+          <img class="img_projet" src="../assets/img/" />
+        </div>
+      </div>
+
+      <div class="colone" id="projet-bde">
+        <div class="elt">
+          <div class="carousel">
+            <input type="radio" name="slides4" id="slide16" checked />
+            <input type="radio" name="slides4" id="slide17" />
+
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="../assets/img/projet_BDE_NW5/AfficheNW5.jpg"
+                  alt="Affiche Normandie Web Five"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="../assets/img/projet_BDE_NW5/logoNW5.jpg"
+                  alt="Logo Normandie Web Five"
+                />
+              </div>
+            </div>
+            <div class="navigation">
+              <label for="slide16"></label>
+              <label for="slide17"></label>
+            </div>
+          </div>
+        </div>
+        <div class="elt">
+          <h1>Projet BDE : Normandie Web Five</h1>
+          <p>
+            Nous avons proposé une sortie pour les étudiants de notre école à
+            notre BDE. Nous avons réalisé un logo, affiche, sondage, devis,
+            budget et rétroplanning...
+          </p>
+          <p>Réalisé en octobre 2024</p>
+        </div>
+      </div>
+
       <div class="colone" id="interview">
         <div class="elt">
           <h1>Interview d'un étudiant :</h1>
           <p>
             Projet d’Interview d’Étudiant en Alternance : J’ai réalisé une
             interview et un carrousel de présentation pour un étudiant de la
-            Normandie Web School, actuellement en alternance chez Sciencethic /
-            Sonodis, à Normanville.
+            Normandie Web School, actuellement en alternance chez<a
+              href="https://www.sciencethic.com/"
+              class="lien_entreprise"
+              >Sciencethic</a
+            >-<a href="https://www.sonodis.fr/" class="lien_entreprise"
+              >Sonodis</a
+            >, à Normanville.
           </p>
-          <p class="date">Réalisé en octobre 2024</p>
+          <p>Réalisé en octobre 2024</p>
         </div>
 
         <div class="elt">

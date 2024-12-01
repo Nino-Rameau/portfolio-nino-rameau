@@ -126,6 +126,16 @@ input#slide15:checked ~ .slides {
   transform: translateX(-200%);
 }
 
+/* PROJET BDE NW5 */
+
+input#slide16:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#slide17:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
 input:checked ~ .navigation label {
   background: #333;
 }

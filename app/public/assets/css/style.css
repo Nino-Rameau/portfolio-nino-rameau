@@ -10,7 +10,7 @@ body {
 
 /* HEADER */
 
-header {
+header nav {
   height: 5em;
   margin: auto;
   border-bottom: solid 1px #000000;
@@ -20,6 +20,11 @@ header {
   gap: 1em;
   background-color: var(--bleu-milieu);
   overflow: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
 }
 
 .img_header {
@@ -46,18 +51,17 @@ header {
   padding: 0.6em 1.5em;
   outline: none;
   text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .btn_header:hover {
-  scale: 1.1;
-  color: #ffffff;
-  background-color: #000000;
-  border-radius: 20px;
+  transform: scale(1.1);
 }
 
-.btn_sommaire a {
+.btn_sommaire {
   border: none;
-  color: #ffffff;
+  color: #000000;
   background-color: var(--bleu-clair);
   border-radius: 20px;
   background-size: 100% auto;
@@ -68,13 +72,21 @@ header {
   padding: 0.4em 1.3em;
   outline: none;
   text-decoration: none;
+  transition: transform 0.3s ease;
+  display: block;
 }
 
-.btn_sommaire a:hover {
-  scale: 1.1;
-  color: #ffffff;
-  background-color: var(--bleu-clair);
-  border-radius: 20px;
+.btn_sommaire:hover {
+  transform: scale(1.1);
+}
+
+.sommaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: start;
+  padding: 1em;
+  margin-left: 3em;
 }
 
 /*FOOTER*/
@@ -85,13 +97,12 @@ header {
 
 footer {
   height: 5em;
-  border: solid #000000;
+  border-top: solid 1px #000000;
 }
 
 .coloneFoother {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 2fr;
   background-color: var(--bleu-milieu);
 }
 
@@ -125,12 +136,18 @@ footer {
 
 /* texte */
 
-p {
+p,
+.lien_entreprise {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.25em;
   color: black;
   text-justify: distribute;
   margin: 2em 1em;
+}
+
+.lien_entreprise {
+  text-decoration: underline;
+  font-size: 1em;
 }
 
 h1,
