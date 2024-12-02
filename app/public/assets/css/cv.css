@@ -5,18 +5,17 @@
   margin: 40px 100px;
 }
 
-.contact-formation,
-.qrcode-et-competence {
+.contact-formation {
   display: flex;
   flex-direction: row;
 }
 
-.contact-centre_interet {
-  margin-left: 3%;
+.contact-ctr_interet-qrcode {
+  margin-left: 2%;
 }
 
 .obj-formation {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .qrcode {
@@ -24,14 +23,32 @@
 }
 
 .competence {
-  margin-left: 30%;
+  margin-left: 10%;
 }
 
 .language {
   margin-left: 10%;
 }
 
+.grande-ligne-milieu {
+  padding-right: 50px;
+  border-right: 20px solid #4269b1;
+}
+
+.grande-ligne-bas {
+  padding-bottom: 20px;
+  border-bottom: 20px solid #4269b1;
+}
+.petite-ligne {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  border-top: 8px solid #4269b1;
+}
+
 /* MISE EN PAGE CONTENU BOX*/
+
+/* BOX CONTACT / CENTRE INTERET / QRCODE */
 
 .img_cv_photo {
   width: 300px;
@@ -41,17 +58,62 @@
   margin-left: 8em;
 }
 
-.img_cv {
+.qrcode {
   width: 100px;
   height: 100px;
-  margin-top: 1em;
+  text-decoration: none;
+  margin-left: 50%;
 }
+.taille_qrcode {
+  width: 100px;
+  height: 100px;
+  text-decoration: none;
+}
+
+.sans-fond {
+  /* pour titre h1*/
+  background-color: #ffffff;
+  margin-right: 0px;
+}
+
+.interet {
+  padding-top: 3em;
+  margin-left: 5%;
+}
+.centrer {
+  text-align: center;
+}
+
+/* BLOC OBJECTIF / FORMATION / EXPERIENCE */
+
+.recherche {
+  text-align: center;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/* BLOC COMPETENCE */
 
 li {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.25em;
 }
 
-.sans-fond {
-  background-color: #ffffff;
+.competence {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.logiciels,
+.language {
+  width: 45%;
+  text-align: center;
 }

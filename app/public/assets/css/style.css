@@ -115,6 +115,31 @@ nav .btn_retour:hover {
   transform: scale(1.1);
 }
 
+button {
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 15px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: "Orbitron", monospace;
+  font-size: 1.25em;
+  font-weight: normal;
+  padding: 0.5em 1.2em;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: #000000;
+}
+
 /*FOOTER*/
 
 .lien img {
