@@ -20,6 +20,7 @@ a {
   border-radius: 0.5em;
   overflow: hidden; /* Affiche une seule slide à la fois */
   border: solid #000000;
+  z-index: 1;
 }
 
 .slides {

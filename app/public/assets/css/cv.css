@@ -1,25 +1,47 @@
-/* CV */
-
-#barre_principal {
-  width: 100%; /* decalage barre*/
-  height: 15px; /* largeur barre */
-  z-index: 10;
-  background-color: #4269b1;
-  border: solid 2px black; /* temporaire*/
-  transform: rotate(115deg);
-}
-
 .cv {
   background-color: #ffffff;
-  margin: 5em 20em;
+  margin: 4em 10em;
+}
+
+.contact-formation .qrcode-et-competence {
+  display: flex;
+}
+
+.contact-interet-qrcode {
+  width: 20%;
+}
+
+.obj-formation {
+  margin-left: 40%;
+}
+
+.qrcode {
+  width: 15%;
+}
+
+.competence {
+  margin-left: 20%;
+}
+
+.img_cv_photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-top: 5em;
+  margin-left: 5em;
 }
 
 .img_cv {
   width: 100px;
   height: 100px;
+  margin-top: 1em;
 }
 
 li {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.25em;
+}
+
+.sans-fond {
+  background-color: #ffffff;
 }

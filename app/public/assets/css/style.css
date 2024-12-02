@@ -25,6 +25,7 @@ header nav {
 header {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .img_header {
@@ -33,7 +34,7 @@ header {
   height: auto;
   max-height: 5em;
   position: absolute;
-  left: 1em;
+  left: 3em;
 }
 
 /* BOUTON */
@@ -87,6 +88,31 @@ header {
   align-items: start;
   padding: 1em;
   margin-left: 3em;
+}
+
+nav .btn_retour {
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 50px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: "Orbitron", monospace;
+  font-size: 2em;
+  font-weight: normal;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  position: fixed;
+  max-width: min-content;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+nav .btn_retour:hover {
+  transform: scale(1.1);
 }
 
 /*FOOTER*/
@@ -148,6 +174,7 @@ p,
 .lien_entreprise {
   text-decoration: underline;
   font-size: 1em;
+  margin: 0;
 }
 
 h1,
@@ -185,24 +212,28 @@ h4 {
 
 /* 2 COLONE */
 
-.colone {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2em 1em; /* 2 gauche droite et 1 haut bas */
-  background-color: var(--bleu-milieu);
-}
-
 .elt {
   background-color: var(--bleu-clair);
   padding: 1em;
-  /* border-radius: 1em;        A REFAIRE POUR ARRONDIR QUE LES 4 COIN PAS LE MILIEU */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 45%;
 }
 
+.colone-2-gauche {
+  display: flex;
+  justify-content: center;
+  margin: 2em 1em;
+  background-color: var(--bleu-milieu);
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+/* pas le points sur les liste*/
 .pas_point {
-  /* sur les liste*/
   list-style-type: none;
 }
