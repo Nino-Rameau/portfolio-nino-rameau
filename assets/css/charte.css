@@ -1,0 +1,59 @@
+@import url("variable.css");
+
+a {
+  color: black;
+  cursor: pointer;
+  font-family: var(--typo-titre);
+  text-decoration: none;
+}
+
+.charte-graphique {
+  background-color: #ffffff;
+  margin: 5em 15em;
+}
+
+img {
+  height: 150px;
+}
+
+.presentation-logo {
+  height: 250px;
+  align-items: center;
+}
+
+.colone-x2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.case-img {
+  margin-top: 10%;
+  margin-right: 5%;
+  width: 30%;
+  margin-top: 20px;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.case-texte {
+  width: 60%;
+  margin-top: 20px;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.titre {
+  text-align: center;
+}
+
+.typo-orbitron {
+  font-family: var(--typo-titre);
+}
+
+.typo-ibm-plex-mono {
+  font-family: var(--typo-texte);
+}

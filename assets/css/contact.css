@@ -1,0 +1,45 @@
+@import url("variable.css");
+
+form {
+  background-color: #acddf6;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+form label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+  width: calc(
+    100% - 20px
+  ); /* largeur de 100% - 20px (coté) pour les zone d'ecriture */
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: #ffffff;
+}
+
+form input[type="checkbox"] {
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  background-color: #28337e;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #4269b1;
+}

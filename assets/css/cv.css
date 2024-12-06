@@ -1,0 +1,116 @@
+@import url("variable.css");
+
+/* MISE EN PAGE DES BOX*/
+
+.cv {
+  background-color: #ffffff;
+  margin: 40px 100px;
+}
+
+.contact-formation {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-ctr_interet-qrcode {
+  margin-left: 2%;
+}
+
+.qrcode {
+  margin-left: 10%;
+}
+
+.competence {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.logiciels,
+.language {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+}
+
+.grande-ligne-milieu {
+  padding-right: 50px;
+  border-right: 35px solid #28337e;
+}
+
+.grande-ligne-bas {
+  border-bottom: 30px solid #28337e;
+}
+.petite-ligne {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  border-top: 10px solid #28337e;
+}
+
+/* MISE EN PAGE CONTENU BOX*/
+
+/* BOX CONTACT / CENTRE INTERET / QRCODE */
+
+.img_cv_photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin-top: 5em;
+  margin-left: 8em;
+}
+
+.qrcode {
+  width: 100px;
+  height: 100px;
+  text-decoration: none;
+  margin-left: 50%;
+}
+.taille_qrcode {
+  width: 100px;
+  height: 100px;
+  text-decoration: none;
+}
+
+.sans-fond {
+  /* pour titre h1*/
+  background-color: #ffffff;
+  margin-right: 0px;
+}
+
+.interet {
+  padding-top: 3em;
+  margin-left: 5%;
+}
+.centrer {
+  text-align: center;
+}
+
+/* BLOC OBJECTIF / FORMATION / EXPERIENCE */
+
+.recherche {
+  text-align: center;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+  padding-left: 2em;
+}
+
+p {
+  padding-left: 2em;
+}
+/* BLOC COMPETENCE */
+
+li {
+  font-family: var(--typo-texte);
+  font-size: 1.25em;
+}

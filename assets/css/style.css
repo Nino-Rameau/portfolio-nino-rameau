@@ -1,0 +1,321 @@
+@import url("variable.css");
+
+body {
+  background-color: var(--bleu-milieu);
+  margin: 0;
+}
+
+/* HEADER */
+
+header nav {
+  margin: auto;
+  border-bottom: solid 1px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: var(--bleu-milieu);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+  */
+
+.img_header {
+  width: auto;
+  max-width: 80px;
+  height: auto;
+}
+
+/* BOUTON */
+
+@media screen and (min-width: 728px) {
+  .btn_header {
+    border: none;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 20px;
+    background-size: 100% auto;
+    cursor: pointer;
+    font-family: var(--typo-titre);
+    font-size: 1.25em;
+    font-weight: normal;
+    padding: 0.6em 1.5em;
+    outline: none;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .btn_header:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn_sommaire {
+  border: none;
+  color: #000000;
+  background-color: var(--bleu-clair);
+  border-radius: 20px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: var(--typo-titre);
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.4em 1.3em;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.btn_sommaire:hover {
+  transform: scale(1.1);
+}
+
+.sommaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: start;
+  padding: 1em;
+  margin-left: 3em;
+}
+
+nav .btn_retour {
+  /*TODO refaire design bouton car trop discret */
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 50px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: var(--typo-titre);
+  font-size: 2em;
+  font-weight: normal;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  position: fixed;
+  max-width: min-content;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+nav .btn_retour:hover {
+  transform: scale(1.1);
+}
+
+button {
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 15px;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: var(--typo-titre);
+  font-size: 1.25em;
+  font-weight: normal;
+  padding: 0.5em 1.2em;
+  outline: none;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: auto;
+  margin-bottom: 45px;
+  text-decoration: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 5em;
+  border-top: solid 1px #000000;
+}
+
+.coloneFoother {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--bleu-milieu);
+}
+
+.eltFoother {
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texteFoother {
+  font-family: var(--typo-texte);
+  text-align: center;
+  font-size: 1em;
+  color: black;
+  text-justify: distribute;
+}
+
+/* ANIMATION LOGO FOOTER*/
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer .linkedin,
+.logo-footer .github {
+  margin: 0 10px;
+  position: relative;
+}
+
+.logo-footer .linkedin a,
+.logo-footer .github a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-footer .linkedin a:hover,
+.logo-footer .github a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.logo-footer .linkedin a svg,
+.logo-footer .github a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+
+.logo-footer .linkedin a:hover,
+.logo-footer .github a:hover {
+  color: white;
+}
+
+.logo-footer .linkedin a .logo-linkedin,
+.logo-footer .github a .logo-github {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-footer .linkedin a .logo-linkedin {
+  background-color: #0274b3;
+}
+
+.logo-footer .github a .logo-github {
+  background-color: #24262a;
+}
+
+.logo-footer .linkedin a:hover .logo-linkedin,
+.logo-footer .github a:hover .logo-github {
+  height: 100%;
+}
+
+/* texte */
+
+p,
+.lien_entreprise {
+  font-family: var(--typo-texte);
+  font-size: 1.25em;
+  color: black;
+  text-justify: distribute;
+  margin: 2em 1em;
+}
+
+.lien_entreprise {
+  text-decoration: underline;
+  font-size: 1em;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--typo-titre);
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 40px 40px 60px 60px;
+  background-color: var(--bleu-clair);
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+.photo_nino {
+  height: 10em;
+  border-radius: 100%;
+}
+
+/* 2 COLONE */
+/*
+.elt {
+  background-color: var(--bleu-clair);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+
+.colone-2-gauche {
+  display: flex;
+  justify-content: center;
+  margin: 2em 1em;
+  background-color: var(--bleu-milieu);
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+  flex-wrap: wrap;
+}
+*/
+/*TODO mettre un border radius ? (pas au milieu que sur cote --> 2 colone coller*/
+/* TODO faire un box shadow ? */
+
+/* pas le points sur les liste*/
+.pas_point {
+  list-style-type: none;
+}

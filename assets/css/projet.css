@@ -1,0 +1,148 @@
+@import url("variable.css");
+
+.img_projet {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  font-family: var(--typo-titre);
+  text-decoration: none;
+}
+
+img {
+  width: 60px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  overflow: hidden; /* Affiche une seule slide à la fois */
+  border: solid #000000;
+  z-index: 1;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.navigation label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* CAROUSEL INTERVIEW  */
+input#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+input#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+input#slide5:checked ~ .slides {
+  transform: translateX(-400%);
+}
+
+input#slide6:checked ~ .slides {
+  transform: translateX(-500%);
+}
+
+input#slide7:checked ~ .slides {
+  transform: translateX(-600%);
+}
+
+input#slide8:checked ~ .slides {
+  transform: translateX(-700%);
+}
+
+/* CAROUSEL MINI JEU  */
+
+input#slide9:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#slide10:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input#slide11:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+input#slide12:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+/* QUIZ GUYANE */
+
+input#slide13:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#slide14:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input#slide15:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* PROJET BDE NW5 */
+
+input#slide16:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#slide17:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input:checked ~ .navigation label {
+  background: #333;
+}
