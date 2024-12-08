@@ -12,23 +12,23 @@ function toggleMobileNav() {
 function toggleDarkMode() {
   const myButton = document.querySelector("#toogleBackground");
   const body = document.querySelector("body");
-  const p = document.querySelectorAll("p");
-  const h1 = document.querySelectorAll("h1");
+
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("ClairSombre");
+  }
 
   if (myButton) {
     function toggleBackground() {
       body.classList.toggle("ClairSombre");
-      p.forEach((p) => {
-        p.classList.toggle("ClairSombre");
-      });
 
-      h1.forEach((h1) => {
-        h1.classList.toggle("ClairSombre");
-      });
+      localStorage.setItem(
+        "darkMode",
+        body.classList.contains("ClairSombre") ? "enabled" : "disabled"
+      );
     }
-
-    myButton.addEventListener("click", toggleBackground);
   }
+
+  myButton.addEventListener("click", toggleBackground);
 }
 
 window.addEventListener("DOMContentLoaded", function () {

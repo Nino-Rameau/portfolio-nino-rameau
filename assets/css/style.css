@@ -1,7 +1,7 @@
 @import url("variable.css");
 
 /* -----------------------------------------------------------
-      BASES
+                        BASES
 -------------------------------------------------------------*/
 
 html,
@@ -20,20 +20,7 @@ body.ClairSombre {
   color: white;
 }
 
-p,
-.lien_entreprise {
-  font-family: var(--typo-texte);
-  font-size: 1.25em;
-  color: black;
-  text-justify: distribute;
-  margin: 2em 1em;
-}
-
-.lien_entreprise {
-  text-decoration: underline;
-  font-size: 1em;
-  margin: 0;
-}
+/* Titre */
 
 h1,
 h2,
@@ -62,19 +49,45 @@ h4 {
   font-size: 1.1em;
 }
 
-p.ClairSombre,
-.lien_entreprise.ClairSombre {
+body.ClairSombre h1,
+body.ClairSombre h2,
+body.ClairSombre h3,
+body.ClairSombre h4 {
   color: white;
 }
 
-h1.ClairSombre,
-h2.ClairSombre,
-h3.ClairSombre,
-h4.ClairSombre {
-  color: white;
+/* Paragraphe*/
+
+p,
+.lien_entreprise {
+  font-family: var(--typo-texte);
+  font-size: 1.25em;
+  color: black;
+  text-justify: distribute;
+  margin: 2em 1em;
 }
 
-/* HEADER */
+.lien_entreprise {
+  text-decoration: underline;
+  font-size: 1em;
+  margin: 0;
+}
+
+body.ClairSombre p,
+body.ClairSombre .lien_entreprise {
+  color: white;
+}
+/* TODO bug mode sombre sur lien entreprise*/
+
+/* IMAGES */
+
+img {
+  align-items: center;
+}
+
+/* --------------------------------------
+          HEADER
+----------------------------------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -154,7 +167,9 @@ header {
   height: auto;
 }
 
-/*FOOTER*/
+/*------------------------------------------
+                FOOTER
+------------------------------------------*/
 
 footer {
   height: 5em;
@@ -253,11 +268,6 @@ footer {
   height: 100%;
 }
 
-.photo_nino {
-  height: 10em;
-  border-radius: 100%;
-}
-
 /* 2 COLONE */
 /*
 .elt {
@@ -287,4 +297,9 @@ footer {
 /* pas le points sur les liste*/
 .pas_point {
   list-style-type: none;
+}
+
+.photo_nino {
+  height: 10em;
+  border-radius: 100%;
 }
