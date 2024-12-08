@@ -1,8 +1,77 @@
 @import url("variable.css");
 
+/* -----------------------------------------------------------
+      BASES
+-------------------------------------------------------------*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--bleu-milieu);
   margin: 0;
+}
+
+body.ClairSombre {
+  background-color: black;
+  color: white;
+}
+
+p,
+.lien_entreprise {
+  font-family: var(--typo-texte);
+  font-size: 1.25em;
+  color: black;
+  text-justify: distribute;
+  margin: 2em 1em;
+}
+
+.lien_entreprise {
+  text-decoration: underline;
+  font-size: 1em;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--typo-titre);
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 40px 40px 60px 60px;
+  background-color: var(--bleu-clair);
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+p.ClairSombre,
+.lien_entreprise.ClairSombre {
+  color: white;
+}
+
+h1.ClairSombre,
+h2.ClairSombre,
+h3.ClairSombre,
+h4.ClairSombre {
+  color: white;
 }
 
 /* HEADER */
@@ -182,51 +251,6 @@ footer {
 .logo-footer .linkedin a:hover .logo-linkedin,
 .logo-footer .github a:hover .logo-github {
   height: 100%;
-}
-
-/* texte */
-
-p,
-.lien_entreprise {
-  font-family: var(--typo-texte);
-  font-size: 1.25em;
-  color: black;
-  text-justify: distribute;
-  margin: 2em 1em;
-}
-
-.lien_entreprise {
-  text-decoration: underline;
-  font-size: 1em;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--typo-titre);
-  color: black;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5em;
-  margin: 40px 40px 60px 60px;
-  background-color: var(--bleu-clair);
-}
-
-h2 {
-  text-align: left;
-  font-size: 1.4em;
-}
-
-h3 {
-  font-size: 1.2em;
-}
-
-h4 {
-  font-size: 1.1em;
 }
 
 .photo_nino {
