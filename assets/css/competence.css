@@ -1,0 +1,241 @@
+@import url("variable.css");
+
+.bloc-barre-prog-language {
+  height: auto;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px 80px 40px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.bloc-barre-prog-language .barre:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.barre {
+  width: 100%;
+  background: #444444;
+  border-radius: 5px;
+}
+
+.barre-stat {
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.barre-text {
+  color: black;
+  font-family: var(--typo-texte);
+}
+
+#python,
+#html,
+#css,
+#js,
+#sql,
+#wordpress,
+#git-github,
+#figma,
+#canva,
+#photoshop,
+#illustrator,
+#indesign,
+#trello,
+#word,
+#power-point,
+#exel {
+  background: var(--bleu-clair);
+}
+
+/*CHOIX DES % de chaque barre*/
+/* langage informatique */
+#python {
+  animation: pythonSlide 1.5s ease forwards;
+}
+@keyframes pythonSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+#html {
+  animation: htmlSlide 1.5s ease forwards;
+}
+@keyframes htmlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+#css {
+  animation: cssSlide 1.5s ease forwards;
+}
+@keyframes cssSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+#js {
+  animation: jsSlide 1.5s ease forwards;
+}
+@keyframes jsSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+#sql {
+  animation: sqlSlide 1.5s ease forwards;
+}
+@keyframes sqlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+/* autre */
+#wordpress {
+  animation: wordpressSlide 1.5s ease forwards;
+}
+@keyframes wordpressSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+#git-github {
+  animation: git-githubSlide 1.5s ease forwards;
+}
+@keyframes git-githubSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+#figma {
+  animation: figmaSlide 1.5s ease forwards;
+}
+@keyframes figmaSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+#canva {
+  animation: canvaSlide 1.5s ease forwards;
+}
+@keyframes canvaSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+#photoshop {
+  animation: photoshopSlide 1.5s ease forwards;
+}
+@keyframes photoshopSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+#illustrator {
+  animation: illustratorSlide 1.5s ease forwards;
+}
+@keyframes illustratorSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+#indesign {
+  animation: indesignSlide 1.5s ease forwards;
+}
+@keyframes indesignSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+#trello {
+  animation: trelloSlide 1.5s ease forwards;
+}
+@keyframes trelloSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+#word {
+  animation: wordSlide 1.5s ease forwards;
+}
+@keyframes wordSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+#power-point {
+  animation: power-pointSlide 1.5s ease forwards;
+}
+@keyframes power-pointSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+#exel {
+  animation: exelSlide 1.5s ease forwards;
+}
+@keyframes exelSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
