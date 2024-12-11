@@ -44,7 +44,7 @@ header nav {
   width: max-content;
 }
 
-nav a {
+header nav a {
   color: var(--color-noir);
   padding: var(--padding-m);
   border-top: var(--border-m-noir);
@@ -67,13 +67,13 @@ nav.menu-open {
   .menu {
     display: none;
   }
-  nav {
+  header nav {
     display: flex;
     position: static;
     flex-direction: row;
     gap: var(--gap-m);
   }
-  nav a {
+  header nav a {
     border: none;
   }
 }
@@ -117,6 +117,14 @@ footer {
   background-color: var(--color-bleu-clair);
 }
 
+body.ClairSombre footer {
+  background-color: var(--color-noir);
+  border: var(--border-s-blanc);
+}
+
+body.ClairSombre .texteFoother {
+  color: var(--color-blanc);
+}
 .coloneFoother {
   display: grid;
   grid-template-columns: 2fr 1fr;
