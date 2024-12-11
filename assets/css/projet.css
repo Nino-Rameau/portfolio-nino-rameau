@@ -6,7 +6,7 @@
 }
 
 a {
-  color: black;
+  color: var(--color-noir);
   cursor: pointer;
   font-family: var(--typo-titre);
   text-decoration: none;
@@ -14,6 +14,18 @@ a {
 
 img {
   width: 60px;
+}
+
+.btn_retour {
+  background-color: var(--color-blanc);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: var(--border-s-noir);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: var(--typo-size-l);
 }
 
 /* CAROUSEL */
@@ -25,7 +37,7 @@ img {
   margin: 0 auto;
   border-radius: 0.5em;
   overflow: hidden; /* Affiche une seule slide à la fois */
-  border: solid #000000;
+  border: var(--border-s-noir);
   z-index: 1;
 }
 
@@ -63,9 +75,7 @@ input[type="radio"] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #ddd;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 /* CAROUSEL INTERVIEW  */

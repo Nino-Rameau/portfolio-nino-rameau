@@ -4,6 +4,7 @@
   width: 80%;
   border-radius: 20px;
   margin: auto;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -11,7 +12,7 @@
 h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: black;
+  color: var(--color-noir);
 }
 
 .bloc-barre-prog-language .barre:not(:last-child) {
@@ -20,18 +21,18 @@ h2 {
 
 .barre {
   width: 100%;
-  background: #444444;
+  background: var(--color-fond-barre-progress);
   border-radius: 5px;
 }
 
 .barre-stat {
-  padding: 8px 20px;
+  padding: 8px 10px 8px 0px;
   border-radius: 5px;
   transition: width 0.3s ease-in-out;
 }
 
 .barre-text {
-  color: black;
+  color: var(--color-noir);
   font-family: var(--typo-texte);
 }
 
@@ -51,7 +52,7 @@ h2 {
 #word,
 #power-point,
 #exel {
-  background: var(--bleu-clair);
+  background: var(--color-bleu-clair);
 }
 
 /*CHOIX DES % de chaque barre*/

@@ -1,9 +1,43 @@
 :root {
-  --bleu-fonce: #28337e;
-  --bleu-milieu: #4269b1;
-  --bleu-clair: #acddf6;
+  /* couleurs */
+  --color-bleu-fonce: #28337e;
+  --color-bleu-milieu: #4269b1;
+  --color-bleu-clair: #acddf6;
+  --color-noir: #101010;
+  --color-blanc: #ffffff;
+  --color-fond-barre-progress: #444444;
 
+  /* type typo */
   --typo-titre: "Orbitron", monospace;
   --typo-texte: "IBM Plex Mono", monospace;
-}
 
+  /* taille typo */
+  --typo-size-s: 1rem; /* p */
+  --typo-size-m: 1.1rem; /* h4 */
+  --typo-size-l: 1.2rem; /* h3 */
+  --typo-size-xl: 1.4rem; /* h2 */
+  --typo-size-xxl: 2.5rem; /* h1 */
+
+  /* marge */
+  --margin-0: 0;
+  --margin-s: 2rem 1rem;
+  --margin-m: 2.5rem 3.75rem;
+
+  /* padding */
+  --padding-0: 0;
+  --padding-m: 0.5rem 1rem;
+  --padding-l: 2rem;
+  --padding-xl: 3rem;
+
+  /* gap */
+  --gap-s: 1rem;
+  --gap-m: 2rem;
+
+  /* bordure */
+  --border-s-noir: solid 1px #101010;
+  --border-m-noir: solid 3px #101010;
+
+  --border-m-bleu-fonce: solid 10px #28337e;
+  --border-xl-bleu-fonce: solid 30px #28337e;
+  --border-xxl-bleu-fonce: solid 35px #28337e;
+}

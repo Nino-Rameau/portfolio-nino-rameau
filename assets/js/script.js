@@ -1,6 +1,6 @@
 function toggleMobileNav() {
   const buttonAction = document.querySelector(".menu");
-  const navMain = document.querySelector(".header-sommaire");
+  const navMain = document.querySelector("nav");
 
   if (buttonAction) {
     buttonAction.addEventListener("click", function () {
