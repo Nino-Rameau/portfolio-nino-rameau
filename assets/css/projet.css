@@ -12,10 +12,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 60px;
-}
-
 .btn_retour {
   background-color: var(--color-blanc);
   border-radius: 10px;
@@ -26,6 +22,25 @@ img {
   padding-left: 10px;
   padding-right: 10px;
   font-size: var(--typo-size-l);
+}
+
+.btn_sommaire {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+  text-align: left;
+  background-color: var(--color-bleu-fonce);
+  color: var(--color-blanc);
+  border-radius: 20px;
+  margin-top: 10px;
+  max-width: min-content;
+  white-space: nowrap;
+}
+
+.btn_sommaire:hover {
+  scale: 1.1;
 }
 
 /* CAROUSEL */
