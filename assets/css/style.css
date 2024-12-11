@@ -304,6 +304,16 @@ body.ClairSombre .lien_entreprise {
 /* TODO bug mode sombre sur lien entreprise*/
 
 /* ---------------------------------------
+            CONTACT
+----------------------------------------*/
+
+.carte-contact {
+  margin: var(--margin-xl);
+  background-color: var(--color-bleu-clair);
+  border-radius: 20px;
+}
+
+/* ---------------------------------------
           
 ----------------------------------------*/
 
