@@ -16,7 +16,7 @@ body {
 
 body.ClairSombre {
   background-color: var(--color-noir);
-  color: var(color-blanc);
+  color: var(--color-blanc);
 }
 
 /* --------------------------------------
@@ -55,14 +55,18 @@ header nav a {
 .menu {
   display: block;
   cursor: pointer;
+  top: 80px;
+  right: 20rem;
 }
 
-nav.menu-open {
+header.menu-open nav {
   display: flex;
-  top: 0;
-  right: 0;
+  top: 80px;
+  margin: auto;
+  opacity: 90%;
+  width: 100%;
+  text-align: center;
 }
-
 @media screen and (min-width: 720px) {
   .menu {
     display: none;
@@ -76,10 +80,34 @@ nav.menu-open {
   header nav a {
     border: none;
   }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: var(--border-s-noir);
+  }
 }
 
 .logo_header {
   max-width: 70px;
+}
+
+/* changement entre img burger et croix*/
+
+.burger {
+  display: block;
+}
+
+.croix {
+  display: none;
+}
+
+header.menu-open .burger {
+  display: none;
+}
+
+header.menu-open .croix {
+  display: block;
 }
 
 /* changement entre img soleil et lune pour mode clair / sombre */
@@ -247,7 +275,6 @@ h4 {
   font-size: var(--typo-size-m);
 }
 
-body.ClairSombre h1,
 body.ClairSombre h2,
 body.ClairSombre h3,
 body.ClairSombre h4 {
