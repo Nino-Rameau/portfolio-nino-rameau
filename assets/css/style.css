@@ -12,77 +12,11 @@ body {
 
 body {
   background-color: var(--bleu-milieu);
-  margin: 0;
 }
 
 body.ClairSombre {
   background-color: black;
   color: white;
-}
-
-/* Titre */
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--typo-titre);
-  color: black;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5em;
-  margin: 40px 40px 60px 60px;
-  background-color: var(--bleu-clair);
-}
-
-h2 {
-  font-size: 1.4em;
-}
-
-h3 {
-  font-size: 1.2em;
-}
-
-h4 {
-  font-size: 1.1em;
-}
-
-body.ClairSombre h1,
-body.ClairSombre h2,
-body.ClairSombre h3,
-body.ClairSombre h4 {
-  color: white;
-}
-
-/* Paragraphe*/
-
-p,
-.lien_entreprise {
-  font-family: var(--typo-texte);
-  font-size: 1.25em;
-  color: black;
-  text-justify: distribute;
-  margin: 2em 1em;
-}
-
-.lien_entreprise {
-  text-decoration: underline;
-  font-size: 1em;
-  margin: 0;
-}
-
-body.ClairSombre p,
-body.ClairSombre .lien_entreprise {
-  color: white;
-}
-/* TODO bug mode sombre sur lien entreprise*/
-
-/* IMAGES */
-
-img {
-  align-items: center;
 }
 
 /* --------------------------------------
@@ -165,6 +99,30 @@ header {
   width: auto;
   max-width: 80px;
   height: auto;
+}
+
+.imgSoleil,
+.imgLune {
+  width: auto;
+  max-width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.imgSoleil {
+  display: block;
+}
+
+.imgLune {
+  display: none;
+}
+
+body.ClairSombre #toogleBackground .imgSoleil {
+  display: none;
+}
+
+body.ClairSombre #toogleBackground .imgLune {
+  display: block;
 }
 
 /*------------------------------------------
@@ -307,3 +265,68 @@ footer {
 /* ---------------------------------------
 
 ----------------------------------------*/
+
+/* Titre */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--typo-titre);
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 40px 40px 60px 60px;
+  background-color: var(--bleu-clair);
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+body.ClairSombre h1,
+body.ClairSombre h2,
+body.ClairSombre h3,
+body.ClairSombre h4 {
+  color: white;
+}
+
+/* Paragraphe*/
+
+p,
+.lien_entreprise {
+  font-family: var(--typo-texte);
+  font-size: 1.25em;
+  color: black;
+  text-justify: distribute;
+  margin: 2em 1em;
+}
+
+.lien_entreprise {
+  text-decoration: underline;
+  font-size: 1em;
+  margin: 0;
+}
+
+body.ClairSombre p,
+body.ClairSombre .lien_entreprise {
+  color: white;
+}
+/* TODO bug mode sombre sur lien entreprise*/
+
+/* IMAGES */
+
+img {
+  align-items: center;
+}
