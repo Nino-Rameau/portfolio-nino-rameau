@@ -54,7 +54,7 @@ a {
   color: var(--color-noir);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
   .btn_sommaire {
     max-width: min-content;
     white-space: nowrap;
