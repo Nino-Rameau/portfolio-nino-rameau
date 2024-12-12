@@ -45,9 +45,9 @@ a {
   border-radius: 20px;
   margin-top: 15px;
   margin-left: 5px;
-
   padding: var(--padding-s);
   font-size: var(--typo-size-s);
+  white-space: normal;
 }
 
 .btn_sommaire:hover {
