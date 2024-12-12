@@ -13,6 +13,10 @@ body.ClairSombre .sans-fond {
 }
 
 .cv {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   margin: var(--margin-s);
 }
 
@@ -21,12 +25,8 @@ body.ClairSombre .sans-fond {
   flex-direction: row;
 }
 
-.contact-ctr_interet-qrcode {
+.contact-ctr-interet-qrcode {
   margin-left: 2%;
-}
-
-.qrcode {
-  margin-left: 10%;
 }
 
 .competence {
@@ -36,6 +36,126 @@ body.ClairSombre .sans-fond {
   gap: var(--gap-s);
   text-align: left;
   position: relative;
+}
+
+/* BORDER DU CV */
+
+.grande-ligne-milieu {
+  padding-right: 10px;
+  border-right: var(--border-l-bleu-fonce);
+}
+
+.grande-ligne-bas {
+  border-top: var(--border-m-bleu-fonce);
+}
+.petite-ligne {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  border-top: var(--border-s-bleu-fonce);
+}
+
+/* MISE EN PAGE CONTENU BOX*/
+
+/* BOX CONTACT / CENTRE INTERET / QRCODE */
+
+.img_cv_photo {
+  width: 10rem;
+  border-radius: 100%;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.qrcode {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-decoration: none;
+}
+.taille_qrcode {
+  display: flex;
+  margin: auto;
+  width: 4.5rem;
+  height: auto;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .img_cv_photo {
+    width: 15rem;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-right: 3rem;
+  }
+
+  .taille_qrcode {
+    width: 8rem;
+  }
+
+  .cv {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cv {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .cv {
+    width: 75%;
+  }
+}
+
+.centrer {
+  text-align: center;
+}
+
+/* ------------------------------------------
+    BLOC OBJECTIF / FORMATION / EXPERIENCE 
+---------------------------------------------*/
+
+.recherche {
+  text-align: center;
+  font-size: var(--typo-size-xxl);
+}
+
+h3 {
+  text-align: center;
+}
+
+/* changement bloc experience visible */
+.experience-petit-ecran {
+  display: block;
+}
+
+.experience-grand-ecran {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .experience-petit-ecran {
+    display: none;
+  }
+
+  .experience-grand-ecran {
+    display: block;
+  }
+}
+
+/* ------------------------------------
+            BLOC COMPETENCE 
+--------------------------------------*/
+
+li {
+  font-family: var(--typo-texte);
+  font-size: var(--typo-size-l);
 }
 
 .logiciels,
@@ -48,79 +168,25 @@ body.ClairSombre .sans-fond {
   flex-direction: column;
 }
 
-/* BORDER DU CV */
-
-.grande-ligne-milieu {
-  padding-right: 50px;
-  border-right: var(--border-xxl-bleu-fonce);
+/* ------------------------------------
+        reset marge pour bordure et font
+--------------------------------------*/
+.marge-top-none {
+  margin-top: 0px;
 }
 
-.grande-ligne-bas {
-  border-bottom: var(--border-xl-bleu-fonce);
-}
-.petite-ligne {
-  display: flex;
-  align-items: center;
-  width: 25%;
-  border-top: var(--border-m-bleu-fonce);
-}
-
-/* MISE EN PAGE CONTENU BOX*/
-
-/* BOX CONTACT / CENTRE INTERET / QRCODE */
-
-.img_cv_photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  margin-top: 5em;
-  margin-left: 8em;
-}
-
-.qrcode {
-  width: 100px;
-  height: 100px;
-  text-decoration: none;
-  margin-left: 50%;
-}
-.taille_qrcode {
-  width: 100px;
-  height: 100px;
-  text-decoration: none;
+.marge-gauche {
+  padding-left: 0px;
 }
 
 .sans-fond {
   /* pour titre h1*/
   background-color: var(--color-blanc);
-  margin-right: 0px;
 }
 
-.interet {
-  padding-top: var(--padding-xl);
-  margin-left: 5%;
-}
-.centrer {
-  text-align: center;
-}
-
-/* BLOC OBJECTIF / FORMATION / EXPERIENCE */
-
-.recherche {
-  text-align: center;
-  font-size: var(--typo-size-xxl);
-}
-
-h3 {
-  text-align: center;
-  padding-left: var(--padding-l);
-}
-
-p {
-  padding-left: var(--padding-l);
-}
-/* BLOC COMPETENCE */
-
-li {
-  font-family: var(--typo-texte);
-  font-size: var(--typo-size-l);
+body.ClairSombre .sans-fond {
+  /* pour titre h1*/
+  background-color: var(--color-noir);
+  color: var(--color-blanc);
+  border: none;
 }

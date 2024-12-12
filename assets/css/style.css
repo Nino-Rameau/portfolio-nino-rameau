@@ -314,7 +314,6 @@ body.ClairSombre p,
 body.ClairSombre .lien_entreprise {
   color: var(--color-blanc);
 }
-/* TODO bug mode sombre sur lien entreprise*/
 
 .telecharger-pdf {
   cursor: pointer;

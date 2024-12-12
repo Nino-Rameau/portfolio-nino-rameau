@@ -41,7 +41,9 @@
 
   --border-s-blanc: solid 1px #ffffff;
 
+  --border-s-bleu-fonce: solid 5px #28337e;
   --border-m-bleu-fonce: solid 10px #28337e;
+  --border-l-bleu-fonce: solid 15px #28337e;
   --border-xl-bleu-fonce: solid 30px #28337e;
   --border-xxl-bleu-fonce: solid 35px #28337e;
 }
