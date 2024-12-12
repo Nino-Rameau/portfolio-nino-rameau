@@ -36,6 +36,10 @@ h2 {
   font-family: var(--typo-texte);
 }
 
+body.ClairSombre .barre-text {
+  color: var(--color-blanc);
+}
+
 #python,
 #html,
 #css,
@@ -53,6 +57,25 @@ h2 {
 #power-point,
 #exel {
   background: var(--color-bleu-clair);
+}
+
+body.ClairSombre #python,
+body.ClairSombre #html,
+body.ClairSombre #css,
+body.ClairSombre #js,
+body.ClairSombre #sql,
+body.ClairSombre #wordpress,
+body.ClairSombre #git-github,
+body.ClairSombre #figma,
+body.ClairSombre #canva,
+body.ClairSombre #photoshop,
+body.ClairSombre #illustrator,
+body.ClairSombre #indesign,
+body.ClairSombre #trello,
+body.ClairSombre #word,
+body.ClairSombre #power-point,
+body.ClairSombre #exel {
+  background: var(--color-bleu-fonce);
 }
 
 /*CHOIX DES % de chaque barre*/

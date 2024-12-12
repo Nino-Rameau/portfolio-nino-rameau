@@ -35,10 +35,13 @@ header {
   height: 80px;
 }
 
+body.ClairSombre header {
+  background-color: var(--color-bleu-fonce);
+}
+
 header nav {
   display: none;
   position: fixed;
-  background-color: var(--color-bleu-clair);
   flex-direction: column;
   gap: var(--gap-s);
   width: max-content;
@@ -50,6 +53,10 @@ header nav a {
   border-top: var(--border-m-noir);
   font-family: var(--typo-titre);
   text-decoration: none;
+}
+
+body.ClairSombre header nav a {
+  color: var(--color-blanc);
 }
 
 .menu {
@@ -159,8 +166,7 @@ footer {
 }
 
 body.ClairSombre footer {
-  background-color: var(--color-noir);
-  border: var(--border-s-blanc);
+  background-color: var(--color-bleu-fonce);
 }
 
 body.ClairSombre .texteFoother {
@@ -288,6 +294,11 @@ h4 {
   font-size: var(--typo-size-m);
 }
 
+body.ClairSombre h1 {
+  background-color: var(--color-bleu-fonce);
+  color: var(--color-blanc);
+}
+
 body.ClairSombre h2,
 body.ClairSombre h3,
 body.ClairSombre h4 {
@@ -353,6 +364,28 @@ body.ClairSombre .lien_entreprise {
   margin: var(--margin-xl);
   background-color: var(--color-bleu-clair);
   border-radius: 20px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  background-color: var(--color-bleu-clair);
+  margin-top: 30px;
+}
+
+body.ClairSombre .carte-contact {
+  background-color: var(--color-bleu-fonce);
+}
+
+.elt-contact p a {
+  color: var(--color-noir);
+}
+
+body.ClairSombre .elt-contact p a {
+  color: var(--color-blanc);
 }
 
 /* ---------------------------------------
