@@ -1,6 +1,8 @@
 @import url("variable.css");
 
-/* MISE EN PAGE DES BOX*/
+/*------------------------------------
+          MISE EN PAGE PAGE 
+-------------------------------------*/
 .cv,
 .sans-fond {
   background-color: var(--color-blanc);
@@ -12,109 +14,43 @@ body.ClairSombre .sans-fond {
   border: var(--border-s-blanc);
 }
 
+/*------------------------------------
+    MISE EN PAGE GRILLE POUR MOBILE
+-------------------------------------*/
+
 .cv {
+  display: grid;
+  grid-template-columns: 1fr;
   width: 95%;
-  display: flex;
-  flex-direction: column;
   margin: auto;
   margin: var(--margin-s);
 }
 
-.contact-formation {
-  display: flex;
-  flex-direction: row;
-}
-
-.contact-ctr-interet-qrcode {
-  margin-left: 2%;
-}
-
-.competence {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: var(--gap-s);
-  text-align: left;
-  position: relative;
-}
-
-/* BORDER DU CV */
-
-.grande-ligne-milieu {
-  padding-right: 10px;
-  border-right: var(--border-l-bleu-fonce);
-}
-
-.grande-ligne-bas {
-  border-top: var(--border-m-bleu-fonce);
-}
-.petite-ligne {
-  display: flex;
-  align-items: center;
-  width: 25%;
-  border-top: var(--border-s-bleu-fonce);
-}
-
-/* MISE EN PAGE CONTENU BOX*/
-
-/* BOX CONTACT / CENTRE INTERET / QRCODE */
+/* -----------------------------------------------
+        BOX CONTACT / CENTRE INTERET / QRCODE 
+-------------------------------------------------*/
 
 .img_cv_photo {
   width: 10rem;
   border-radius: 100%;
-  margin-top: 2rem;
-  margin-left: 3rem;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .qrcode {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: auto;
   text-decoration: none;
 }
+
 .taille_qrcode {
-  display: flex;
   margin: auto;
   width: 4.5rem;
   height: auto;
   text-decoration: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .img_cv_photo {
-    width: 15rem;
-    margin-top: 5rem;
-    margin-left: 8rem;
-    margin-right: 3rem;
-  }
-
-  .taille_qrcode {
-    width: 8rem;
-  }
-
-  .cv {
-    display: flex;
-    margin: auto;
-    width: 85%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .cv {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .cv {
-    width: 75%;
-  }
-}
-
-.centrer {
-  text-align: center;
 }
 
 /* ------------------------------------------
@@ -130,25 +66,6 @@ h3 {
   text-align: center;
 }
 
-/* changement bloc experience visible */
-.experience-petit-ecran {
-  display: block;
-}
-
-.experience-grand-ecran {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .experience-petit-ecran {
-    display: none;
-  }
-
-  .experience-grand-ecran {
-    display: block;
-  }
-}
-
 /* ------------------------------------
             BLOC COMPETENCE 
 --------------------------------------*/
@@ -158,19 +75,15 @@ li {
   font-size: var(--typo-size-l);
 }
 
-.logiciels,
-.language {
+.langage,
+.logiciels {
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 45%;
-  flex-direction: column;
 }
 
 /* ------------------------------------
-    reset marge pour bordure et font
+        RESET MARGE / PADDING
 --------------------------------------*/
+
 .marge-top-none {
   margin-top: 0px;
 }
@@ -178,6 +91,10 @@ li {
 .marge-gauche {
   padding-left: 0px;
 }
+
+/* ------------------------------------
+        RESET COULEURS
+--------------------------------------*/
 
 .sans-fond {
   /* pour titre h1*/
@@ -194,4 +111,151 @@ body.ClairSombre li a {
   background-color: var(--color-noir);
   color: var(--color-blanc);
   border: none;
+}
+
+/* -------------------------------------
+                BORDER DU CV 
+---------------------------------------*/
+
+.grande-ligne-milieu {
+  padding-right: 10px;
+  border-right: var(--border-l-bleu-fonce);
+}
+
+.grande-ligne-haut {
+  border-top: var(--border-m-bleu-fonce);
+}
+
+.petite-ligne {
+  width: 25%;
+  border-top: var(--border-s-bleu-fonce);
+}
+
+/* -------------------------------------
+                AUTRES
+---------------------------------------*/
+
+.centrer {
+  text-align: center;
+}
+
+/* -------------------------------------
+                RESPONSIVE
+---------------------------------------*/
+
+/*------------------------------------
+  MISE EN PAGE GRILLE POUR MOBILE
+-------------------------------------*/
+@media screen and (max-width: 600px) {
+  .grande-ligne-milieu {
+    border-style: none;
+  }
+}
+
+/*------------------------------------
+  MISE EN PAGE GRILLE POUR TABLETTE
+-------------------------------------*/
+
+@media screen and (min-width: 600px) {
+  .cv {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .contact {
+    grid-column: 1; /* Colonne A */
+    grid-row: 1; /* Ligne A */
+  }
+
+  .obj-formation {
+    grid-column: 2; /* Colonne B */
+    grid-row: 1; /* Ligne A */
+  }
+
+  .experience {
+    grid-column: 1 / span 2; /* Colonne A et B */
+    grid-row: 2; /* Ligne B */
+  }
+
+  .competence {
+    grid-column: 1 / span 2; /* Colonne A et B */
+    grid-row: 3; /* Ligne C */
+  }
+
+  .logiciels {
+    grid-column: 1; /* Colonne A */
+    grid-row: 4; /* Ligne D */
+  }
+
+  .langage {
+    grid-column: 2; /* Colonne B */
+    grid-row: 4; /* Ligne D */
+  }
+
+  .experience .petite-ligne {
+    border-style: none;
+  }
+
+  .experience .grande-ligne-haut,
+  .competence {
+    border-top: var(--border-m-bleu-fonce);
+    width: 100%;
+  }
+}
+
+/*------------------------------------
+    MISE EN PAGE GRILLE POUR ORDI
+-------------------------------------*/
+
+@media screen and (min-width: 900px) {
+  .cv {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .contact {
+    grid-column: 1; /* Colonne A */
+    grid-row: span 2; /* Ligne A et B */
+  }
+
+  .obj-formation {
+    grid-column: 2; /* Colonne B */
+    grid-row: 1; /* Ligne A */
+  }
+
+  .experience {
+    grid-column: 2; /* Colonne B */
+    grid-row: 2; /* Ligne B */
+  }
+
+  .competence {
+    grid-column: 1 / span 2; /* Colonne A et B */
+    grid-row: 3; /* Ligne C */
+  }
+
+  .logiciels {
+    grid-column: 1; /* Colonne A */
+    grid-row: 4; /* Ligne D */
+  }
+
+  .langage {
+    grid-column: 2; /* Colonne B */
+    grid-row: 4; /* Ligne D */
+  }
+
+  .competence {
+    border-top: var(--border-m-bleu-fonce);
+    width: 100%;
+  }
+
+  .img_cv_photo {
+    width: 15rem;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-right: 3rem;
+  }
+
+  .taille_qrcode {
+    width: 8rem;
+  }
 }
