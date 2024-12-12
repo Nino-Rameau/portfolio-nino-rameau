@@ -48,6 +48,8 @@ body.ClairSombre .sans-fond {
   flex-direction: column;
 }
 
+/* BORDER DU CV */
+
 .grande-ligne-milieu {
   padding-right: 50px;
   border-right: var(--border-xxl-bleu-fonce);
