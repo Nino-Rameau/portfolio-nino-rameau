@@ -45,6 +45,15 @@ header nav {
   flex-direction: column;
   gap: var(--gap-s);
   width: max-content;
+  background-color: var(--color-bleu-clair);
+}
+
+body.ClairSombre header nav {
+  background-color: var(--color-bleu-fonce);
+}
+
+body.ClairSombre header.menu-open nav {
+  opacity: 95%;
 }
 
 header nav a {
@@ -119,6 +128,13 @@ body.ClairSombre .imgLune {
   display: block;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: var(--border-s-noir);
+}
+
 @media screen and (min-width: 720px) {
   .menu {
     display: none;
@@ -130,12 +146,6 @@ body.ClairSombre .imgLune {
   }
   header nav a {
     border: none;
-  }
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    border-bottom: var(--border-s-noir);
   }
 }
 
@@ -381,6 +391,10 @@ body.ClairSombre .lien_entreprise {
   margin-top: 30px;
 }
 
+.elt {
+  max-width: 95%;
+}
+
 @media screen and (min-width: 720px) {
   .container {
     flex-direction: row;
@@ -389,6 +403,9 @@ body.ClairSombre .lien_entreprise {
   .reverse {
     flex-direction: row-reverse;
   }
+  .elt {
+    max-width: 47%;
+  }
 }
 .container-accueil {
   width: 85%;
@@ -396,10 +413,6 @@ body.ClairSombre .lien_entreprise {
 
 body.ClairSombre .container {
   background-color: var(--color-bleu-fonce);
-}
-
-.elt {
-  max-width: 47%;
 }
 
 .elt p a {

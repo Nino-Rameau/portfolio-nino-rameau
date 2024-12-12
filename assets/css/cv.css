@@ -184,7 +184,12 @@ li {
   background-color: var(--color-blanc);
 }
 
-body.ClairSombre .sans-fond {
+li a {
+  color: var(--color-noir);
+}
+
+body.ClairSombre .sans-fond,
+body.ClairSombre li a {
   /* pour titre h1*/
   background-color: var(--color-noir);
   color: var(--color-blanc);

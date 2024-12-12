@@ -26,6 +26,7 @@
 
   /* padding */
   --padding-0: 0;
+  --padding-xs: 0.3rem 0.2rem;
   --padding-s: 0.4rem 0.25rem;
   --padding-m: 0.5rem 1rem;
   --padding-l: 2rem;

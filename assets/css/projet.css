@@ -30,7 +30,7 @@ a {
 }
 
 .sommaire {
-  padding-left: 0;
+  padding-left: 30px;
 }
 
 .btn_sommaire {
@@ -164,6 +164,80 @@ body.ClairSombre .img-lien-github {
   .titre-projet,
   body.ClairSombre .titre-projet {
     border: none;
+  }
+}
+
+/* ------------------------------------------
+                TAGS 
+-------------------------------------------*/
+
+.projet-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 0px;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.projet-tag a,
+.projet-tag p {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+body.ClairSombre .projet-tag p {
+  color: black;
+}
+
+.tag {
+  display: none;
+  border-radius: 20px;
+  max-width: min-content;
+  padding: var(--padding-xs);
+  margin: 0px;
+}
+
+.python {
+  background-color: #4082b4;
+}
+
+.php {
+  background-color: #777cb4;
+}
+
+.mysql {
+  background-color: #055f87;
+}
+
+.html {
+  background-color: #e54d26;
+}
+
+.css {
+  background-color: #0170be;
+}
+
+.js {
+  background-color: #f7e018;
+}
+
+.logo {
+  background-color: #12ca12;
+}
+
+.charte-graph {
+  background-color: #64f564;
+}
+
+.equipe {
+  background-color: #ff7415;
+}
+
+@media screen and (min-width: 1024px) {
+  .tag {
+    display: block;
   }
 }
 
