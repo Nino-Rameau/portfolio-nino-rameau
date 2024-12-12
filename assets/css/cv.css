@@ -248,6 +248,15 @@ body.ClairSombre li a {
     width: 100%;
   }
 
+  .experience .grande-ligne-haut {
+    border-style: none;
+  }
+
+  .experience .petite-ligne {
+    width: 25%;
+    border-top: var(--border-s-bleu-fonce);
+  }
+
   .img_cv_photo {
     width: 15rem;
   }
