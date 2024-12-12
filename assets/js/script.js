@@ -11,7 +11,6 @@ function toggleMobileNav() {
 
 function toggleDarkMode() {
   const myButton = document.querySelector("#toogleBackground");
-  const myButton2 = document.querySelector("#toogleBackground2");
   const body = document.querySelector("body");
 
   if (localStorage.getItem("darkMode") === "enabled") {
