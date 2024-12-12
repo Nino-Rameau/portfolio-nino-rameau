@@ -28,28 +28,141 @@ a {
   scale: 1.5;
 }
 
+.sommaire {
+  padding-left: 0;
+}
+
 .btn_sommaire {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   border: none;
-  text-align: left;
+  text-align: center;
   background-color: var(--color-bleu-fonce);
   color: var(--color-blanc);
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-left: 5px;
   max-width: min-content;
   white-space: nowrap;
   padding: var(--padding-s);
+  font-size: var(--typo-size-s);
 }
 
-/* CAROUSEL */
+.btn_sommaire:hover {
+  background-color: var(--color-bleu-clair);
+  color: var(--color-noir);
+}
+
+/* ------------------------------------------
+                    texte
+-------------------------------------------*/
+
+.titre-projet {
+  text-align: center;
+  border-top: var(--border-s-noir);
+}
+
+body.ClairSombre .titre-projet {
+  border-top: var(--border-s-blanc);
+}
+
+.description-projet {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-lien-github {
+  display: flex;
+  width: 50px;
+  margin: auto;
+}
+
+body.ClairSombre .img-lien-github {
+  color: var(--color-blanc);
+}
+
+.img_projet {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .carousel {
+    max-width: 400px;
+  }
+  .img_projet {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .carousel {
+    max-width: 450px;
+  }
+  .img_projet {
+    max-width: 450px;
+  }
+  .img-lien-github {
+    width: 75px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    max-width: 500px;
+  }
+  .img_projet {
+    max-width: 800px;
+  }
+  .img-lien-github {
+    width: 85px;
+  }
+}
+
+/* ------------------------------------------
+            COLONE POUR GRAND ECRAN
+-------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+  .colone {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    padding-bottom: 60px;
+    gap: 25px;
+    background-color: var(--color-bleu-clair);
+    border-radius: 20px;
+    padding-top: 10px;
+  }
+
+  .inverser {
+    flex-direction: row-reverse;
+  }
+
+  .elt {
+    max-width: 47%;
+  }
+  .titre-projet,
+  body.ClairSombre .titre-projet {
+    border: none;
+  }
+}
+
+/* ------------------------------------------
+                    CAROUSEL 
+-------------------------------------------*/
 
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 500px;
   margin: 0 auto;
   border-radius: 0.5em;
   overflow: hidden; /* Affiche une seule slide à la fois */

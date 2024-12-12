@@ -7,41 +7,71 @@ a {
   text-decoration: none;
 }
 
+/* ---------------------------------
+              FONT PAGE
+--------------------------------- */
+
 .charte-graphique {
   background-color: var(--color-blanc);
-  margin: var(--margin-m);
+  margin: var(--margin-s);
+  padding-bottom: 10px;
 }
 
-.logo {
-  height: 250px;
-  align-items: center;
+body.ClairSombre .charte-graphique {
+  background-color: var(--color-noir);
+  border: var(--border-s-blanc);
 }
 
-.colone-x2 {
-  width: 80%;
-  margin: auto;
+/* ---------------------------------
+            BTN SOMMAIRE
+--------------------------------- */
+.sommaire-charte-graph {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
+  border: var(--border-s-noir);
+  text-align: center;
+  color: var(--color-noir);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 5px;
+  max-width: min-content;
+  white-space: nowrap;
+  padding: var(--padding-s);
+  font-size: var(--typo-size-s);
 }
 
-.case-img {
-  margin-top: 10%;
-  margin-right: 5%;
-  width: 30%;
-  padding: 10px;
-  min-width: 200px;
+body.ClairSombre .sommaire-charte-graph {
+  border: var(--border-s-blanc);
+  color: var(--color-blanc);
 }
 
-.case-texte {
-  width: 60%;
-  margin-top: 20px;
-  padding: 10px;
-  min-width: 200px;
+.sommaire-charte-graph:hover {
+  background-color: var(--color-bleu-clair);
 }
 
-.titre {
+body.ClairSombre .sommaire-charte-graph:hover {
+  background-color: var(--color-bleu-clair);
+  color: var(--color-noir);
+}
+
+/* ---------------------------------
+          texte et image
+--------------------------------- */
+
+p {
+  margin: 0;
+}
+
+.typo {
+  margin-top: 40px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+h2,
+h3 {
   text-align: center;
 }
 
@@ -51,4 +81,112 @@ a {
 
 .typo-ibm-plex-mono {
   font-family: var(--typo-texte);
+}
+
+.logo {
+  display: flex;
+  height: 200px;
+  margin: auto;
+}
+
+.banniere {
+  display: flex;
+  height: 110px;
+  margin: auto;
+}
+
+.description-logo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+@media screen and (min-width: 720px) {
+  .logo {
+    height: 250px;
+  }
+
+  .banniere {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .colone-x2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 30px;
+  }
+
+  .elt {
+    max-width: 65%;
+  }
+
+  .elt-logo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    max-width: 95%;
+  }
+
+  .logo {
+    height: 250px;
+  }
+
+  .banniere {
+    height: 200px;
+  }
+}
+
+/* ----------------------------------
+            PALETTE COULEUR
+-----------------------------------*/
+
+.palette {
+  display: flex;
+  height: 200px;
+  width: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.color {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blanc);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.color span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.color:nth-child(1) {
+  background: #acddf6;
+}
+
+.color:nth-child(2) {
+  background: #4269b1;
+}
+
+.color:nth-child(3) {
+  background: #28337e;
+}
+
+.color:hover {
+  flex: 2;
+}
+
+.color:hover span {
+  opacity: 1;
 }

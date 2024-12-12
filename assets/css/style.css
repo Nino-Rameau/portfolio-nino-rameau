@@ -143,6 +143,7 @@ body.ClairSombre .imgLune {
 footer {
   height: 5em;
   background-color: var(--color-bleu-clair);
+  margin-top: 25px;
 }
 
 body.ClairSombre footer {
@@ -303,6 +304,29 @@ body.ClairSombre .lien_entreprise {
 }
 /* TODO bug mode sombre sur lien entreprise*/
 
+.telecharger-pdf {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  border: var(--border-m-noir);
+  text-align: center;
+  color: var(--color-noir);
+  background-color: var(--color-bleu-clair);
+  border-radius: 10px;
+  max-width: min-content;
+  white-space: nowrap;
+  padding: var(--padding-s);
+  font-size: var(--typo-size-xl);
+  text-decoration: none;
+}
+
+.telecharger-pdf:hover {
+  scale: 1.2;
+}
 /* ---------------------------------------
             CONTACT
 ----------------------------------------*/

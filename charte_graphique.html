@@ -72,32 +72,42 @@
       <section class="charte-graphique">
         <h1>Ma Charte Graphique</h1>
         <nav class="sommaire">
-          <a
-            href="#presentation-logo"
-            class="btn_sommaire"
-            id="presentation-logo"
-            >Pourquoi ce logo ?</a
-          >
-          <a href="#typo-couleurs" class="btn_sommaire"
-            >Typographie et couleurs</a
-          >
-          <a href="#logo-variante" class="btn_sommaire"
-            >Le logo et les variantes</a
-          >
-          <a href="#interdit-logo" class="btn_sommaire"
-            >Les interdits du logo</a
-          >
+          <ul class="pas_point">
+            <li>
+              <a
+                href="#presentation-logo"
+                class="sommaire-charte-graph"
+                id="presentation-logo"
+                >Pourquoi ce logo ?</a
+              >
+            </li>
+            <li>
+              <a href="#typo-couleurs" class="sommaire-charte-graph"
+                >Typographie et couleurs</a
+              >
+            </li>
+            <li>
+              <a href="#logo-variante" class="sommaire-charte-graph"
+                >Le logo et les variantes</a
+              >
+            </li>
+            <li>
+              <a href="#interdit-logo" class="sommaire-charte-graph"
+                >Les interdits du logo</a
+              >
+            </li>
+          </ul>
         </nav>
         <h2 class="titre">Pourquoi ce logo ?</h2>
         <section class="colone-x2">
-          <section class="case-img">
+          <section class="elt">
             <img
               src=" assets/img/charte-graphique-nino/logo-verti-sans-nom.png"
               alt="mon logo"
               class="logo"
             />
           </section>
-          <section class="case-texte">
+          <section class="elt">
             <ul>
               <li>
                 Couleurs :
@@ -136,7 +146,7 @@
                     Les initiales NR : Elles personnalisent le logo et
                     renforcent mon identité.
                   </li>
-                  <li>
+                  <li id="typo-couleurs">
                     Les petits carrés : Ces éléments décoratifs dynamisent le
                     design tout en évoquant les pixels, référence aux
                     technologie numériques.
@@ -147,23 +157,24 @@
           </section>
         </section>
 
-        <h2 id="typo-couleurs" class="titre">Typographie :</h2>
+        <h2 class="titre">Typographie :</h2>
         <div class="typo">
-          <h4 class="typo-nasalization">Nasalization</h4>
+          <h3 class="typo-nasalization">Nasalization</h3>
           <p class="typo-nasalization">
             Officiusamet facianitatem facepero imincienis exped quisquas
             doluptam harchit, aut as estiae si restiam, sust que vel mod quiatas
             apero to molupti venihiteniam raecuptas eiciandae doluptate corum
             quiatur?
           </p>
-          <h4 class="typo-orbitron">Orbitron</h4>
+          <!-- TODO manque typo nasalization -->
+          <h3 class="typo-orbitron">Orbitron</h3>
           <p class="typo-orbitron">
             Officiusamet facianitatem facepero imincienis exped quisquas
             doluptam harchit, aut as estiae si restiam, sust que vel mod quiatas
             apero to molupti venihiteniam raecuptas eiciandae doluptate corum
             quiatur?
           </p>
-          <h class="typo-ibm-plex-mono">IBM Plex Mono</h>
+          <h3 class="typo-ibm-plex-mono">IBM Plex Mono</h3>
           <p class="typo-ibm-plex-mono">
             Officiusamet facianitatem facepero imincienis exped quisquas
             doluptam harchit, aut as estiae si restiam, sust que vel mod quiatas
@@ -171,66 +182,94 @@
             quiatur?
           </p>
         </div>
+
         <h2 class="titre">Couleurs :</h2>
-        <!--TODO inserer et mettre en page les couleurs -->
-        <h2 id="logo-variante" class="titre">Logo et variantes :</h2>
-        <img
-          src=" assets/img/charte-graphique-nino/logo-verti-avec-nom.png"
-          alt="mon logo vertical avec le nom."
-          class="logo"
-        />
-        Logo vertical avec le nom
-        <img
-          src=" assets/img/charte-graphique-nino/logo-verti-sans-nom.png"
-          alt="mon logo vertical sans le nom."
-          class="logo"
-        />
-        Logo horizontal avec le nom
+        <div class="palette">
+          <div class="color"><span>#ACDDF6</span></div>
+          <div class="color"><span>#4269B1</span></div>
+          <div class="color" id="logo-variante"><span>#28337E</span></div>
+        </div>
+
+        <h2 class="titre">Logo et variantes :</h2>
+        <div class="colone-x2">
+          <div class="elt-logo">
+            <img
+              src=" assets/img/charte-graphique-nino/logo-verti-avec-nom.png"
+              alt="mon logo vertical avec le nom."
+              class="logo"
+            />
+            <p class="description-logo">Logo vertical avec le nom</p>
+          </div>
+          <div class="elt-logo">
+            <img
+              src=" assets/img/charte-graphique-nino/logo-verti-sans-nom.png"
+              alt="mon logo vertical sans le nom."
+              class="logo"
+            />
+            <p class="description-logo">Logo horizontal avec le nom</p>
+          </div>
+        </div>
         <img
           src=" assets/img/charte-graphique-nino/logo-hori.png"
           alt="mon logo horizontal."
           class="logo"
         />
-        Logo vertical sans le nom
+        <p class="description-logo">Logo vertical sans le nom</p>
 
         <img
           src=" assets/img/charte-graphique-nino/banniere.png"
           alt="ma banniere de reseaux sociaux."
-          class="logo"
+          class="banniere"
         />
-        Bannière réseaux sociaux avec le logo
-        <h2 id="interdit-logo" class="titre">Interdits du logo :</h2>
-        <img
-          src=" assets/img/charte-graphique-nino/logo-nom-deplacer.png"
-          alt="logo avec le nom deplacer."
-          class="logo"
-        />
-        Interdit de déplacer le nom
-        <img
-          src=" assets/img/charte-graphique-nino/logo-forme-changer.png"
-          alt="logo avec la forme changer."
-          class="logo"
-        />
-        Interdit d’enlever le fond
-        <img
-          src=" assets/img/charte-graphique-nino/logo-couleur-changer.png"
-          alt="logo avec la couleur changer."
-          class="logo"
-        />
-        Interdit de changer la forme
-        <img
-          src=" assets/img/charte-graphique-nino/logo-sans-font.png"
-          alt="logo sans le font."
-          class="logo"
-        />
-        Interdit de changer les couleurs
+        <p class="description-logo" id="interdit-logo">
+          Bannière réseaux sociaux avec le logo
+        </p>
 
+        <h2 class="titre">Interdits du logo :</h2>
+        <div class="colone-x2">
+          <div class="elt-logo">
+            <img
+              src=" assets/img/charte-graphique-nino/logo-nom-deplacer.png"
+              alt="logo avec le nom deplacer."
+              class="logo"
+            />
+            <p class="description-logo">Interdit de déplacer le nom</p>
+          </div>
+          <div class="elt-logo">
+            <img
+              src=" assets/img/charte-graphique-nino/logo-forme-changer.png"
+              alt="logo avec la forme changer."
+              class="logo"
+            />
+            <p class="description-logo">Interdit d’enlever le fond</p>
+          </div>
+        </div>
+        <div class="colone-x2">
+          <div class="elt-logo">
+            <img
+              src=" assets/img/charte-graphique-nino/logo-couleur-changer.png"
+              alt="logo avec la couleur changer."
+              class="logo"
+            />
+            <p class="description-logo">Interdit de changer la forme</p>
+          </div>
+          <div class="elt-logo">
+            <img
+              src=" assets/img/charte-graphique-nino/logo-sans-font.png"
+              alt="logo sans le font."
+              class="logo"
+            />
+            <p class="description-logo">Interdit de changer les couleurs</p>
+          </div>
+        </div>
         <img
           src=" assets/img/charte-graphique-nino/logo-forme-deplacer.png"
           alt="logo avec la forme deplacer."
           class="logo"
         />
-        Interdit d’inverser ou déplacer les formes
+        <p class="description-logo">
+          Interdit d’inverser ou déplacer les formes
+        </p>
       </section>
 
       <a

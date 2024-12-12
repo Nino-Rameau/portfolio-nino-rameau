@@ -76,8 +76,8 @@
 
       <h1 id="retour">Voici des projets que j'ai réalisé :​</h1>
       <!--TODO ajout de tag HTML / CSS / JS / PYTHON / creation logo ... -->
-      <nav class="sommaire">
-        <ul class="pas_point">
+      <nav>
+        <ul class="pas_point sommaire">
           <li>
             <a href="#normandie-blog-school" class="btn_sommaire"
               >Projet Normandie Blog School (12/2024)</a
@@ -122,85 +122,96 @@
         </ul>
       </nav>
 
-      <div class="colone-2-gauche" id="normandie-blog-school">
+      <div class="colone inverser" id="normandie-blog-school">
         <div class="elt">
-          <h2>Normandie Blog School</h2>
-          <p>Description</p>
-          <p>Réalisé en décembre 2024</p>
+          <h2 class="titre-projet">Normandie Blog School</h2>
+          <p class="description-projet">Description</p>
+          <p class="date-projet">Réalisé en décembre 2024</p>
+        </div>
+
+        <div class="elt">
+          <img
+            class="img_projet"
+            src=" assets/img/Normandie_Blog_School/logo.png"
+            alt="logo du Normandie Blog School"
+          />
+          <!--TODO reparer taille img differente entre carrousel et img seul-->
+          <p>
+            Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :
+          </p>
+          <a
+            class="lien"
+            href="https://github.com/Nino-Rameau/normandie-blog-school"
+            title="GitHub"
+          >
+            <svg
+              class="img-lien-github"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.963 2.382C.554 2.621-1.82 17.93 8.852 21.602c.498.093.684-.219.684-.478v-1.68c-2.79.601-3.38-1.317-3.38-1.317a2.6 2.6 0 0 0-1.121-1.442c-.902-.612.072-.602.072-.602a2.07 2.07 0 0 1 1.536 1.038a2.167 2.167 0 0 0 2.924.819c.052-.5.275-.965.633-1.317c-2.23-.25-4.564-1.1-4.564-4.875a3.76 3.76 0 0 1 1.038-2.645a3.46 3.46 0 0 1 .103-2.634s.84-.26 2.76 1.037a9.6 9.6 0 0 1 5.02 0c1.908-1.276 2.748-1.038 2.748-1.038c.365.828.398 1.763.093 2.614a3.75 3.75 0 0 1 1.037 2.645c0 3.786-2.344 4.626-4.574 4.865c1.038.55.602 4.086.664 4.522c0 .259.176.57.695.477c10.642-3.64 8.152-18.97-3.257-19.209"
+              />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="elt">
-        <img
-          class="img_projet"
-          src=" assets/img/Normandie_Blog_School/logo.png"
-          alt="logo du Normandie Blog School"
-        />
-        <!--TODO reparer taille img differente entre carrousel et img seul-->
-        <p>
-          Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :
-        </p>
-        <a
-          class="lien"
-          href="https://github.com/Nino-Rameau/normandie-blog-school"
-          title="GitHub"
-        >
-          <img alt="logo github" src=" assets/img/github.png" />
-        </a>
-      </div>
 
-      <div class="colone-2-gauche" id="club-eco-st-sever">
+      <div class="colone" id="club-eco-st-sever">
         <div class="elt">
-          <h2>Projet Club Eco Saint Sever</h2>
-          <p>description</p>
-          <p>Réalisé de novembre à decembre 2024</p>
+          <h2 class="titre-projet">Projet Club Eco Saint Sever</h2>
+          <p class="description-projet">description</p>
+          <p class="date-projet">Réalisé de novembre à decembre 2024</p>
         </div>
         <div class="elt">
           <img class="img_projet" src=" assets/img/" alt="" />
         </div>
       </div>
 
-      <div class="colone-2-gauche" id="projet-bde">
+      <div class="colone inverser" id="projet-bde">
         <div class="elt">
-          <h2>Projet BDE : Normandie Web Five</h2>
-          <p>
+          <h2 class="titre-projet">Projet BDE : Normandie Web Five</h2>
+          <p class="description-projet">
             Nous avons proposé une sortie pour les étudiants de notre école à
             notre BDE. Nous avons réalisé un logo, affiche, sondage, devis,
             budget et rétroplanning...
           </p>
-          <p>Réalisé en octobre 2024</p>
+          <p class="date-projet">Réalisé en octobre 2024</p>
         </div>
-      </div>
-      <div class="elt">
-        <div class="carousel">
-          <!-- TODO carousel auto et ajout de fleche (pas non manuel avec point comme actuellement)-->
-          <input type="radio" name="slides4" id="slide16" checked />
-          <input type="radio" name="slides4" id="slide17" />
 
-          <div class="slides">
-            <div class="slide">
-              <img
-                src=" assets/img/projet_BDE_NW5/AfficheNW5.jpg"
-                alt="Affiche Normandie Web Five"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src=" assets/img/projet_BDE_NW5/logoNW5.jpg"
-                alt="Logo Normandie Web Five"
-              />
-            </div>
-          </div>
-          <div class="navigation">
-            <label for="slide16"></label>
-            <label for="slide17"></label>
-          </div>
-        </div>
-      </div>
-
-      <div class="colone-2-gauche" id="interview">
         <div class="elt">
-          <h2>Interview d'un étudiant :</h2>
-          <p>
+          <div class="carousel">
+            <!-- TODO carousel auto et ajout de fleche (pas non manuel avec point comme actuellement)-->
+            <input type="radio" name="slides4" id="slide16" checked />
+            <input type="radio" name="slides4" id="slide17" />
+
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src=" assets/img/projet_BDE_NW5/AfficheNW5.jpg"
+                  alt="Affiche Normandie Web Five"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src=" assets/img/projet_BDE_NW5/logoNW5.jpg"
+                  alt="Logo Normandie Web Five"
+                />
+              </div>
+            </div>
+            <div class="navigation">
+              <label for="slide16"></label>
+              <label for="slide17"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="colone" id="interview">
+        <div class="elt">
+          <h2 class="titre-projet">Interview d'un étudiant :</h2>
+          <p class="description-projet">
             Projet d’Interview d’Étudiant en Alternance : J’ai réalisé une
             interview et un carrousel de présentation pour un étudiant de la
             Normandie Web School, actuellement en alternance chez
@@ -213,7 +224,7 @@
             >
             , à Normanville.
           </p>
-          <p>Réalisé en octobre 2024</p>
+          <p class="date-projet">Réalisé en octobre 2024</p>
         </div>
 
         <div class="elt">
@@ -268,10 +279,10 @@
         </div>
       </div>
 
-      <div class="colone-2-gauche">
+      <div class="colone inverser">
         <div class="elt">
-          <h2>Site de mini-jeux</h2>
-          <p>
+          <h2 class="titre-projet">Site de mini-jeux</h2>
+          <p class="description-projet">
             Ce projet est un site web local de mini-jeux interactifs, incluant
             des jeux comme le Morpion et le Snake. Le site est développé avec
             Python et le module Flask. Les pages web sont créées en HTML, CSS et
@@ -279,7 +290,7 @@
             scores et les profils des joueurs.
           </p>
 
-          <p id="badge-rfid">Réalisé en Janvier 2024</p>
+          <p class="date-projet">Réalisé en Janvier 2024</p>
         </div>
         <div class="elt">
           <div class="carousel">
@@ -316,7 +327,7 @@
               <label for="slide12"></label>
             </div>
           </div>
-          <p>
+          <p id="badge-rfid">
             Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :
           </p>
           <a
@@ -324,21 +335,32 @@
             href="https://github.com/Nino-Rameau/mini_jeux"
             title="GitHub"
           >
-            <img alt="logo github" src=" assets/img/github.png" />
+            <svg
+              class="img-lien-github"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.963 2.382C.554 2.621-1.82 17.93 8.852 21.602c.498.093.684-.219.684-.478v-1.68c-2.79.601-3.38-1.317-3.38-1.317a2.6 2.6 0 0 0-1.121-1.442c-.902-.612.072-.602.072-.602a2.07 2.07 0 0 1 1.536 1.038a2.167 2.167 0 0 0 2.924.819c.052-.5.275-.965.633-1.317c-2.23-.25-4.564-1.1-4.564-4.875a3.76 3.76 0 0 1 1.038-2.645a3.46 3.46 0 0 1 .103-2.634s.84-.26 2.76 1.037a9.6 9.6 0 0 1 5.02 0c1.908-1.276 2.748-1.038 2.748-1.038c.365.828.398 1.763.093 2.614a3.75 3.75 0 0 1 1.037 2.645c0 3.786-2.344 4.626-4.574 4.865c1.038.55.602 4.086.664 4.522c0 .259.176.57.695.477c10.642-3.64 8.152-18.97-3.257-19.209"
+              />
+            </svg>
           </a>
         </div>
       </div>
 
-      <div class="colone-2-gauche">
+      <div class="colone">
         <div class="elt">
-          <h2>Gestion de badges RFID en Python et MySQL</h2>
-          <p>
+          <h2 class="titre-projet">
+            Gestion de badges RFID en Python et MySQL
+          </h2>
+          <p class="description-projet">
             Le programme permet de gérer les données des badges RFID via une
             interface en ligne de commande. Il est développé en Python et est
             connecté à une base de données MySQL, il permet d’afficher, de
             modifier, de supprimer des informations de manière organisée.
           </p>
-          <p>Réalisé en novembre 2023</p>
+          <p class="date-projet">Réalisé en novembre 2023</p>
         </div>
 
         <div class="elt">
@@ -356,20 +378,29 @@
             title="GitHub"
             id="quiz-guyane"
           >
-            <img alt="logo github" src=" assets/img/github.png" />
+            <svg
+              class="img-lien-github"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.963 2.382C.554 2.621-1.82 17.93 8.852 21.602c.498.093.684-.219.684-.478v-1.68c-2.79.601-3.38-1.317-3.38-1.317a2.6 2.6 0 0 0-1.121-1.442c-.902-.612.072-.602.072-.602a2.07 2.07 0 0 1 1.536 1.038a2.167 2.167 0 0 0 2.924.819c.052-.5.275-.965.633-1.317c-2.23-.25-4.564-1.1-4.564-4.875a3.76 3.76 0 0 1 1.038-2.645a3.46 3.46 0 0 1 .103-2.634s.84-.26 2.76 1.037a9.6 9.6 0 0 1 5.02 0c1.908-1.276 2.748-1.038 2.748-1.038c.365.828.398 1.763.093 2.614a3.75 3.75 0 0 1 1.037 2.645c0 3.786-2.344 4.626-4.574 4.865c1.038.55.602 4.086.664 4.522c0 .259.176.57.695.477c10.642-3.64 8.152-18.97-3.257-19.209"
+              />
+            </svg>
           </a>
         </div>
       </div>
 
-      <div class="colone-2-gauche">
+      <div class="colone inverser">
         <div class="elt" id="quiz-guyane">
-          <h2>Quiz sur la Guyane</h2>
-          <p>
+          <h2 class="titre-projet">Quiz sur la Guyane</h2>
+          <p class="description-projet">
             J’ai créé un site web de quiz sur la Guyane. Le site utilise les
             langages HTML, CSS et Python avec Flask. C’est mon premier projet
             web, qui m’a permis de découvrir le développement de sites.
           </p>
-          <p id="maison-turtle">Réalisé en mai 2023</p>
+          <p class="date-projet">Réalisé en mai 2023</p>
         </div>
         <div class="elt">
           <div class="carousel">
@@ -404,7 +435,7 @@
               <label for="slide15"></label>
             </div>
           </div>
-          <p>
+          <p id="maison-turtle">
             Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :
           </p>
           <a
@@ -412,21 +443,30 @@
             href="https://github.com/Nino-Rameau/Quiz_Guyane"
             title="GitHub"
           >
-            <img alt="logo github" src=" assets/img/github.png" />
+            <svg
+              class="img-lien-github"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.963 2.382C.554 2.621-1.82 17.93 8.852 21.602c.498.093.684-.219.684-.478v-1.68c-2.79.601-3.38-1.317-3.38-1.317a2.6 2.6 0 0 0-1.121-1.442c-.902-.612.072-.602.072-.602a2.07 2.07 0 0 1 1.536 1.038a2.167 2.167 0 0 0 2.924.819c.052-.5.275-.965.633-1.317c-2.23-.25-4.564-1.1-4.564-4.875a3.76 3.76 0 0 1 1.038-2.645a3.46 3.46 0 0 1 .103-2.634s.84-.26 2.76 1.037a9.6 9.6 0 0 1 5.02 0c1.908-1.276 2.748-1.038 2.748-1.038c.365.828.398 1.763.093 2.614a3.75 3.75 0 0 1 1.037 2.645c0 3.786-2.344 4.626-4.574 4.865c1.038.55.602 4.086.664 4.522c0 .259.176.57.695.477c10.642-3.64 8.152-18.97-3.257-19.209"
+              />
+            </svg>
           </a>
         </div>
       </div>
 
-      <div class="colone-2-gauche">
+      <div class="colone">
         <div class="elt">
-          <h2>Projet Architecture urbaine sur turtle</h2>
-          <p>
+          <h2 class="titre-projet">Projet Architecture urbaine sur turtle</h2>
+          <p class="description-projet">
             Ce projet Python utilise le module Turtle pour créer un dessin. Le
             code génère un ciel, des nuages, un soleil et une rue composée
             d’immeubles. Chaque immeuble a des murs colorés et un nombre
             d’étages aléatoires, ainsi que des fenêtres et un toit.
           </p>
-          <p>Réalisé en mars 2023</p>
+          <p class="date-projet">Réalisé en mars 2023</p>
         </div>
 
         <div class="elt">
@@ -443,7 +483,16 @@
             href="https://github.com/Nino-Rameau/Architecture_urbaine_sur_turtle"
             title="GitHub"
           >
-            <img alt="logo github" src=" assets/img/github.png" />
+            <svg
+              class="img-lien-github"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.963 2.382C.554 2.621-1.82 17.93 8.852 21.602c.498.093.684-.219.684-.478v-1.68c-2.79.601-3.38-1.317-3.38-1.317a2.6 2.6 0 0 0-1.121-1.442c-.902-.612.072-.602.072-.602a2.07 2.07 0 0 1 1.536 1.038a2.167 2.167 0 0 0 2.924.819c.052-.5.275-.965.633-1.317c-2.23-.25-4.564-1.1-4.564-4.875a3.76 3.76 0 0 1 1.038-2.645a3.46 3.46 0 0 1 .103-2.634s.84-.26 2.76 1.037a9.6 9.6 0 0 1 5.02 0c1.908-1.276 2.748-1.038 2.748-1.038c.365.828.398 1.763.093 2.614a3.75 3.75 0 0 1 1.037 2.645c0 3.786-2.344 4.626-4.574 4.865c1.038.55.602 4.086.664 4.522c0 .259.176.57.695.477c10.642-3.64 8.152-18.97-3.257-19.209"
+              />
+            </svg>
           </a>
         </div>
       </div>
@@ -456,6 +505,7 @@
           <br />
           Mentions légales | Conditions Générales
         </div>
+
         <ul class="logo-footer pas_point">
           <!-- LinkedIn -->
           <li class="linkedin">
