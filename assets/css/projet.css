@@ -143,6 +143,10 @@ body.ClairSombre .img-lien-github {
     padding-top: 10px;
   }
 
+  body.ClairSombre .colone {
+    background-color: var(--color-bleu-fonce);
+  }
+
   .inverser {
     flex-direction: row-reverse;
   }

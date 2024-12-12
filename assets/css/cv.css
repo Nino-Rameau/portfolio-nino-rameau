@@ -5,8 +5,15 @@
 .sans-fond {
   background-color: var(--color-blanc);
 }
+
+body.ClairSombre .cv,
+body.ClairSombre .sans-fond {
+  background-color: var(--color-noir);
+  border: var(--border-s-blanc);
+}
+
 .cv {
-  margin: var(--margin-m);
+  margin: var(--margin-s);
 }
 
 .contact-formation {
