@@ -192,6 +192,12 @@ body.ClairSombre .texteFoother {
   text-justify: distribute;
 }
 
+.footer-page-vide {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 /* ANIMATION LOGO FOOTER*/
 .logo-footer {
   display: flex;
@@ -359,15 +365,14 @@ body.ClairSombre .lien_entreprise {
 /* ---------------------------------------
             CONTACT
 ----------------------------------------*/
-
-.carte-contact {
+.container {
   margin: var(--margin-xl);
   background-color: var(--color-bleu-clair);
   border-radius: 20px;
-  width: 60%;
+  width: 75%;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -376,30 +381,48 @@ body.ClairSombre .lien_entreprise {
   margin-top: 30px;
 }
 
-body.ClairSombre .carte-contact {
+@media screen and (min-width: 720px) {
+  .container {
+    flex-direction: row;
+    padding: 5px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+.container-accueil {
+  width: 85%;
+}
+
+body.ClairSombre .container {
   background-color: var(--color-bleu-fonce);
 }
 
-.elt-contact p a {
+.elt {
+  max-width: 47%;
+}
+
+.elt p a {
   color: var(--color-noir);
 }
 
-body.ClairSombre .elt-contact p a {
+body.ClairSombre .elt p a {
   color: var(--color-blanc);
 }
 
 /* ---------------------------------------
-          
+                  IMAGES
 ----------------------------------------*/
-
-/* IMAGES */
 
 img {
   align-items: center;
 }
 
-.pas_point {
-  list-style-type: none;
+.img-deco {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding-bottom: 15px;
 }
 
 .photo_nino {
@@ -408,4 +431,12 @@ img {
   height: 10em;
   border-radius: 100%;
   margin-top: 25px;
+}
+
+/* ---------------------------------------
+                AUTRE
+----------------------------------------*/
+
+.pas_point {
+  list-style-type: none;
 }
