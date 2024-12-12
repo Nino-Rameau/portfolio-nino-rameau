@@ -202,12 +202,6 @@ body.ClairSombre .texteFoother {
   text-justify: distribute;
 }
 
-.footer-page-vide {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 /* ANIMATION LOGO FOOTER*/
 .logo-footer {
   display: flex;
