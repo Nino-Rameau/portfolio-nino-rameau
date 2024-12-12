@@ -336,8 +336,15 @@ body.ClairSombre .lien_entreprise {
 }
 
 .telecharger-pdf:hover {
-  scale: 1.2;
+  scale: 1.1;
 }
+
+@media screen and (max-width: 450px) {
+  .telecharger-pdf {
+    white-space: wrap;
+  }
+}
+
 /* ---------------------------------------
             CONTACT
 ----------------------------------------*/

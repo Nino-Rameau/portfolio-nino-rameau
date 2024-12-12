@@ -44,8 +44,7 @@ a {
   border-radius: 20px;
   margin-top: 15px;
   margin-left: 5px;
-  max-width: min-content;
-  white-space: nowrap;
+
   padding: var(--padding-s);
   font-size: var(--typo-size-s);
 }
@@ -53,6 +52,13 @@ a {
 .btn_sommaire:hover {
   background-color: var(--color-bleu-clair);
   color: var(--color-noir);
+}
+
+@media screen and (min-width: 700px) {
+  .btn_sommaire {
+    max-width: min-content;
+    white-space: nowrap;
+  }
 }
 
 /* ------------------------------------------
