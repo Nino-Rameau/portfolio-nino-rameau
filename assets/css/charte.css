@@ -101,10 +101,6 @@ h3 {
 }
 
 @media screen and (max-width: 450px) {
-  .logo {
-    height: 250px;
-  }
-
   .banniere {
     height: 80px;
   }
@@ -121,7 +117,7 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .colone-x2 {
+  .colonne-x2 {
     width: 80%;
     margin: auto;
     display: flex;

@@ -182,7 +182,7 @@ body.ClairSombre footer {
 body.ClairSombre .texteFoother {
   color: var(--color-blanc);
 }
-.coloneFoother {
+.colonneFoother {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
