@@ -158,8 +158,8 @@ h3 {
 
 @media not (pointer: fine) {
   .couleur-tel {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
 }
 

@@ -64,6 +64,7 @@ a {
 
 .colonne {
   border-top: var(--border-s-noir);
+  margin-top: 15px;
 }
 
 /* ------------------------------------------
@@ -106,6 +107,9 @@ body.ClairSombre .img-lien-github {
   .img_projet {
     max-width: 400px;
   }
+  .img-lien-github {
+    width: 75px;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -115,11 +119,8 @@ body.ClairSombre .img-lien-github {
   .img_projet {
     max-width: 450px;
   }
-  .img-lien-github {
-    width: 75px;
-  }
 }
-
+/* TODO entre 720px et 1024px bug affichage marge et texte align */
 @media screen and (min-width: 1024px) {
   .carousel {
     max-width: 500px;
