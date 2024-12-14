@@ -38,10 +38,13 @@
 
   /* bordure */
   --border-s-noir: solid 1px #101010;
+  --border-s-noir: solid 2px #101010;
   --border-m-noir: solid 3px #101010;
 
   --border-s-blanc: solid 1px #ffffff;
+  --border-m-blanc: solid 3px #ffffff;
 
+  --border-xs-bleu-fonce: solid 3px #28337e;
   --border-s-bleu-fonce: solid 5px #28337e;
   --border-m-bleu-fonce: solid 10px #28337e;
   --border-l-bleu-fonce: solid 15px #28337e;

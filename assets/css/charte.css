@@ -12,46 +12,73 @@ a {
 --------------------------------- */
 
 .charte-graphique {
-  background-color: var(--color-blanc);
+  background-image: radial-gradient(
+      circle at 27% 33%,
+      rgba(193, 193, 193, 0.04) 0%,
+      rgba(193, 193, 193, 0.04) 50%,
+      rgba(77, 77, 77, 0.04) 50%,
+      rgba(77, 77, 77, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 35% 8%,
+      rgba(183, 183, 183, 0.04) 0%,
+      rgba(183, 183, 183, 0.04) 50%,
+      rgba(25, 25, 25, 0.04) 50%,
+      rgba(25, 25, 25, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 93% 50%,
+      rgba(218, 218, 218, 0.04) 0%,
+      rgba(218, 218, 218, 0.04) 50%,
+      rgba(127, 127, 127, 0.04) 50%,
+      rgba(127, 127, 127, 0.04) 100%
+    ),
+    linear-gradient(90deg, hsl(116, 0%, 99%), hsl(116, 0%, 99%));
   margin: var(--margin-s);
   padding-bottom: 10px;
 }
 
 body.ClairSombre .charte-graphique {
-  background-color: var(--color-noir);
-  border: var(--border-s-blanc);
+  background-image: none;
+  border: var(--border-m-blanc);
 }
 
 /* ---------------------------------
             BTN SOMMAIRE
 --------------------------------- */
-.sommaire-charte-graph {
+
+.sommaire {
   display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
+}
+
+.btn-sommaire-charte-graph {
+  display: flex;
+  margin: auto;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   border: var(--border-s-noir);
-  text-align: center;
   color: var(--color-noir);
   border-radius: 10px;
-  margin-top: 15px;
-  margin-left: 5px;
   max-width: min-content;
   white-space: nowrap;
   padding: var(--padding-s);
   font-size: var(--typo-size-s);
 }
 
-body.ClairSombre .sommaire-charte-graph {
+body.ClairSombre .btn-sommaire-charte-graph {
   border: var(--border-s-blanc);
   color: var(--color-blanc);
 }
 
-.sommaire-charte-graph:hover {
+.btn-sommaire-charte-graph:hover {
   background-color: var(--color-bleu-clair);
 }
 
-body.ClairSombre .sommaire-charte-graph:hover {
+body.ClairSombre .btn-sommaire-charte-graph:hover {
   background-color: var(--color-bleu-clair);
   color: var(--color-noir);
 }

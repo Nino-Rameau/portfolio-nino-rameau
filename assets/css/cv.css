@@ -105,9 +105,7 @@ li a {
   color: var(--color-noir);
 }
 
-body.ClairSombre .sans-fond,
 body.ClairSombre li a {
-  /* pour titre h1*/
   background-color: var(--color-noir);
   color: var(--color-blanc);
   border: none;

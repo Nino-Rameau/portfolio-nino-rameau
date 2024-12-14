@@ -13,15 +13,16 @@ a {
 }
 
 .btn_retour {
-  background-color: var(--color-blanc);
-  border-radius: 10px;
+  background-color: var(--color-bleu-clair);
+  border-radius: 15px;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   border: var(--border-s-noir);
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  font-size: var(--typo-size-l);
+  /* padding-left: 0.4rem;
+  padding-right: 0.4rem; */
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  font-size: var(--typo-size-xl);
   z-index: 20;
 }
 
@@ -29,8 +30,19 @@ a {
   scale: 1.5;
 }
 
+body.ClairSombre .btn_retour {
+  color: var(--color-blanc);
+  background-color: var(--color-bleu-fonce);
+}
+
 .sommaire {
   padding-left: 30px;
+}
+
+@media screen and (min-width: 720px) {
+  .sommaire {
+    padding-left: 8%;
+  }
 }
 
 .btn_sommaire {
@@ -73,10 +85,6 @@ a {
 
 .titre-projet {
   text-align: center;
-}
-
-body.ClairSombre .titre-projet {
-  border-top: var(--border-s-blanc);
 }
 
 .description-projet {
@@ -127,6 +135,7 @@ body.ClairSombre .img-lien-github {
   }
   .img_projet {
     max-width: 800px;
+    margin-top: 15px;
   }
   .img-lien-github {
     width: 85px;
@@ -250,11 +259,12 @@ body.ClairSombre .projet-tag p {
   background-color: #ff7415;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .tag {
     display: block;
   }
-}
+} */
+/* TODO tag ne pas suppr */
 
 /* ------------------------------------------
                     CAROUSEL 

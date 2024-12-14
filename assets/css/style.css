@@ -11,11 +11,155 @@ body {
 }
 
 body {
-  background-color: var(--color-bleu-milieu);
+  background-image: linear-gradient(
+      52deg,
+      rgba(163, 163, 163, 0.09) 0%,
+      rgba(163, 163, 163, 0.09) 33.3%,
+      rgba(100, 100, 100, 0.09) 33.3%,
+      rgba(100, 100, 100, 0.09) 66.6%,
+      rgba(71, 71, 71, 0.09) 66.6%,
+      rgba(71, 71, 71, 0.09) 99%
+    ),
+    linear-gradient(
+      258deg,
+      rgba(193, 193, 193, 0.06) 0%,
+      rgba(193, 193, 193, 0.06) 33.3%,
+      rgba(92, 144, 242, 0.06) 33.3%,
+      rgba(92, 144, 242, 0.06) 66.6%,
+      rgba(92, 92, 92, 0.06) 66.6%,
+      rgba(92, 92, 92, 0.06) 99%
+    ),
+    linear-gradient(
+      129deg,
+      rgba(45, 45, 45, 0.03) 0%,
+      rgba(45, 45, 45, 0.03) 33.3%,
+      rgba(103, 153, 250, 0.03) 33.3%,
+      rgba(103, 153, 250, 0.03) 66.6%,
+      rgba(173, 173, 173, 0.03) 66.6%,
+      rgba(173, 173, 173, 0.03) 99%
+    ),
+    linear-gradient(
+      280deg,
+      rgba(24, 18, 18, 0.06) 0%,
+      rgba(24, 18, 18, 0.06) 33.3%,
+      rgba(81, 81, 81, 0.06) 33.3%,
+      rgba(81, 81, 81, 0.06) 66.6%,
+      rgba(125, 125, 125, 0.06) 66.6%,
+      rgba(125, 125, 125, 0.06) 99%
+    ),
+    linear-gradient(
+      85deg,
+      rgba(65, 173, 254, 0.04) 0%,
+      rgba(65, 173, 254, 0.04) 33.3%,
+      rgba(41, 99, 246, 0.04) 33.3%,
+      rgba(41, 99, 246, 0.04) 66.6%,
+      rgba(39, 39, 39, 0.04) 66.6%,
+      rgba(39, 39, 39, 0.04) 99%
+    ),
+    linear-gradient(
+      128deg,
+      rgba(88, 86, 86, 0.06) 0%,
+      rgba(88, 86, 86, 0.06) 33.3%,
+      rgba(0, 0, 0, 0.06) 33.3%,
+      rgba(0, 0, 0, 0.06) 66.6%,
+      rgba(72, 171, 248, 0.06) 66.6%,
+      rgba(72, 171, 248, 0.06) 99.89999999999999%
+    ),
+    linear-gradient(
+      323deg,
+      rgba(40, 40, 40, 0.07) 0%,
+      rgba(40, 40, 40, 0.07) 33.3%,
+      rgba(137, 134, 134, 0.07) 33.3%,
+      rgba(137, 134, 134, 0.07) 66.6%,
+      rgba(190, 190, 190, 0.07) 66.6%,
+      rgba(190, 190, 190, 0.07) 99.89999999999999%
+    ),
+    linear-gradient(
+      61deg,
+      rgba(230, 230, 230, 0) 0%,
+      rgba(230, 230, 230, 0) 33.3%,
+      rgba(241, 241, 241, 0) 33.3%,
+      rgba(241, 241, 241, 0) 66.6%,
+      rgba(55, 55, 55, 0) 66.6%,
+      rgba(55, 55, 55, 0) 99%
+    ),
+    linear-gradient(0deg, rgb(33, 97, 211), rgb(145, 214, 250));
 }
 
 body.ClairSombre {
-  background-color: var(--color-noir);
+  background-image: linear-gradient(
+      52deg,
+      rgba(163, 163, 163, 0.09) 0%,
+      rgba(163, 163, 163, 0.09) 33.3%,
+      rgba(100, 100, 100, 0.09) 33.3%,
+      rgba(100, 100, 100, 0.09) 66.6%,
+      rgba(71, 71, 71, 0.09) 66.6%,
+      rgba(71, 71, 71, 0.09) 99%
+    ),
+    linear-gradient(
+      258deg,
+      rgba(193, 193, 193, 0.06) 0%,
+      rgba(193, 193, 193, 0.06) 33.3%,
+      rgba(169, 169, 169, 0.06) 33.3%,
+      rgba(169, 169, 169, 0.06) 66.6%,
+      rgba(92, 92, 92, 0.06) 66.6%,
+      rgba(92, 92, 92, 0.06) 99%
+    ),
+    linear-gradient(
+      129deg,
+      rgba(45, 45, 45, 0.03) 0%,
+      rgba(45, 45, 45, 0.03) 33.3%,
+      rgba(223, 223, 223, 0.03) 33.3%,
+      rgba(223, 223, 223, 0.03) 66.6%,
+      rgba(173, 173, 173, 0.03) 66.6%,
+      rgba(173, 173, 173, 0.03) 99%
+    ),
+    linear-gradient(
+      280deg,
+      rgba(24, 18, 18, 0.06) 0%,
+      rgba(24, 18, 18, 0.06) 33.3%,
+      rgba(81, 81, 81, 0.06) 33.3%,
+      rgba(81, 81, 81, 0.06) 66.6%,
+      rgba(125, 125, 125, 0.06) 66.6%,
+      rgba(125, 125, 125, 0.06) 99%
+    ),
+    linear-gradient(
+      85deg,
+      rgba(7, 6, 6, 0.04) 0%,
+      rgba(7, 6, 6, 0.04) 33.3%,
+      rgba(127, 120, 120, 0.04) 33.3%,
+      rgba(127, 120, 120, 0.04) 66.6%,
+      rgba(39, 39, 39, 0.04) 66.6%,
+      rgba(39, 39, 39, 0.04) 99%
+    ),
+    linear-gradient(
+      128deg,
+      rgba(88, 86, 86, 0.06) 0%,
+      rgba(88, 86, 86, 0.06) 33.3%,
+      rgba(0, 0, 0, 0.06) 33.3%,
+      rgba(0, 0, 0, 0.06) 66.6%,
+      rgba(140, 140, 140, 0.06) 66.6%,
+      rgba(140, 140, 140, 0.06) 99.89999999999999%
+    ),
+    linear-gradient(
+      323deg,
+      rgba(40, 40, 40, 0.07) 0%,
+      rgba(40, 40, 40, 0.07) 33.3%,
+      rgba(137, 134, 134, 0.07) 33.3%,
+      rgba(137, 134, 134, 0.07) 66.6%,
+      rgba(190, 190, 190, 0.07) 66.6%,
+      rgba(190, 190, 190, 0.07) 99.89999999999999%
+    ),
+    linear-gradient(
+      61deg,
+      rgba(230, 230, 230, 0) 0%,
+      rgba(230, 230, 230, 0) 33.3%,
+      rgba(241, 241, 241, 0) 33.3%,
+      rgba(241, 241, 241, 0) 66.6%,
+      rgba(55, 55, 55, 0) 66.6%,
+      rgba(55, 55, 55, 0) 99%
+    ),
+    linear-gradient(0deg, rgb(0, 0, 0), rgb(2, 3, 3));
   color: var(--color-blanc);
 }
 
@@ -31,37 +175,57 @@ header {
   align-items: center;
   margin: auto;
   position: relative;
-  background-color: var(--color-bleu-clair);
+  background-image: linear-gradient(
+    60deg,
+    var(--color-bleu-clair),
+    var(--color-bleu-milieu)
+  );
   height: 80px;
 }
 
 body.ClairSombre header {
-  background-color: var(--color-bleu-fonce);
+  background-image: linear-gradient(
+    60deg,
+    var(--color-bleu-milieu),
+    var(--color-bleu-fonce)
+  );
 }
 
 header nav {
   display: none;
   position: fixed;
   flex-direction: column;
-  gap: var(--gap-s);
   width: max-content;
-  background-color: var(--color-bleu-clair);
 }
 
-body.ClairSombre header nav {
-  background-color: var(--color-bleu-fonce);
-}
-
-body.ClairSombre header.menu-open nav {
-  opacity: 95%;
+@media screen and (max-width: 1024px) {
+  header nav {
+    background-image: linear-gradient(
+      60deg,
+      var(--color-bleu-clair),
+      var(--color-bleu-milieu)
+    );
+  }
+  body.ClairSombre header nav {
+    background-image: linear-gradient(
+      60deg,
+      var(--color-bleu-milieu),
+      var(--color-bleu-fonce)
+    );
+  }
 }
 
 header nav a {
   color: var(--color-noir);
   padding: var(--padding-m);
-  border-top: var(--border-m-noir);
   font-family: var(--typo-titre);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header nav a {
+    border-top: var(--border-s-noir);
+  }
 }
 
 body.ClairSombre header nav a {
@@ -79,9 +243,46 @@ header.menu-open nav {
   display: flex;
   top: 80px;
   margin: auto;
-  opacity: 90%;
   width: 100%;
   text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: var(--border-s-noir);
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    flex-direction: row;
+    gap: var(--gap-m);
+  }
+  header nav a {
+    border-radius: 15px;
+    box-shadow: 0px 0px 60px var(--color-bleu-fonce);
+  }
+  header nav a:hover {
+    background-color: var(--color-bleu-clair);
+  }
+  header nav a.active {
+    background-color: var(--color-bleu-clair);
+    box-shadow: 0px 0px 20px #30feff;
+  }
+  header nav a:hover {
+    background-color: var(--color-bleu-milieu);
+  }
+  body.ClairSombre header nav a.active {
+    background-color: var(--color-bleu-fonce);
+    box-shadow: 0px 0px 20px #3000f0;
+  }
 }
 
 /* changement entre img burger et croix*/
@@ -106,9 +307,6 @@ header.menu-open .croix {
 
 .imgSoleil,
 .imgLune {
-  width: auto;
-  max-width: 50px;
-  height: auto;
   cursor: pointer;
 }
 
@@ -127,28 +325,6 @@ body.ClairSombre .imgSoleil {
 body.ClairSombre .imgLune {
   display: block;
   color: var(--color-blanc);
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: var(--border-s-noir);
-}
-
-@media screen and (min-width: 1024px) {
-  .menu {
-    display: none;
-  }
-  header nav {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    gap: var(--gap-m);
-  }
-  header nav a {
-    border: none;
-  }
 }
 
 .logo_header {
@@ -217,7 +393,7 @@ body.ClairSombre .texteFoother {
   height: 50px;
   border-radius: 50%;
   color: #4d4d4d;
-  background-color: #ffffff;
+  background-color: var(--color-blanc);
   transition: all 0.3s ease-in-out;
 }
 
@@ -236,7 +412,7 @@ body.ClairSombre .texteFoother {
 
 .logo-footer .linkedin a:hover,
 .logo-footer .github a:hover {
-  color: white;
+  color: var(--color-blanc);
 }
 
 .logo-footer .linkedin a .logo-linkedin,
@@ -278,8 +454,40 @@ h4 {
 h1 {
   text-align: center;
   font-size: var(--typo-size-xxl);
-  margin: var(--margin-m);
+  margin: var(--margin-xl);
   background-color: var(--color-bleu-clair);
+  padding: 1rem 0.6rem;
+  border-radius: 20px;
+  color: black;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #30feff;
+}
+
+body.ClairSombre h1 {
+  box-shadow: 0px 0px 60px #3000f0;
+}
+
+h1:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    270deg,
+    rgba(10, 45, 110, 0.681) 0%,
+    rgba(28, 131, 216, 0.873) 60%
+  );
+}
+
+body.ClairSombre h1:hover {
+  background: linear-gradient(
+    270deg,
+    rgba(26, 23, 156, 0.681) 0%,
+    rgba(13, 84, 216, 0.873) 60%
+  );
+}
+
+@media screen and (max-width: 820px) {
+  h1 {
+    margin: var(--margin-s);
+  }
 }
 
 h2 {
@@ -380,6 +588,14 @@ body.ClairSombre .lien_entreprise {
   max-width: 95%;
 }
 
+.svg-contact {
+  color: var(--color-bleu-fonce);
+}
+
+body.ClairSombre .svg-contact {
+  color: var(--color-bleu-clair);
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
@@ -438,3 +654,7 @@ img {
 .pas_point {
   list-style-type: none;
 }
+
+/* ---------------------------------------
+                test
+----------------------------------------*/
