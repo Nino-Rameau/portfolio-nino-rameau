@@ -323,7 +323,7 @@ body.ClairSombre #exel {
   transform: rotateY(180deg);
 }
 
-@media not (pointer: fine) {
+@media not (pointer: coarse) {
   .carte-certif:focus .carte {
     transform: rotateY(180deg);
   }
