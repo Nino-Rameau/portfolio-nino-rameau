@@ -62,7 +62,7 @@ body.ClairSombre .charte-graphique {
   justify-content: center;
   border: var(--border-s-noir);
   color: var(--color-noir);
-  border-radius: 10px;
+  border-radius: var(--radius-xs);
   max-width: min-content;
   white-space: nowrap;
   padding: var(--padding-s);
@@ -194,7 +194,7 @@ h3 {
   display: flex;
   height: 200px;
   width: 80%;
-  border-radius: 20px;
+  border-radius: var(--radius-l);
   overflow: hidden;
   margin: auto;
 }
@@ -216,15 +216,15 @@ h3 {
 }
 
 .color:nth-child(1) {
-  background: #acddf6;
+  background: var(--color-bleu-clair);
 }
 
 .color:nth-child(2) {
-  background: #4269b1;
+  background: var(--color-bleu-milieu);
 }
 
 .color:nth-child(3) {
-  background: #28337e;
+  background: var(--color-bleu-fonce);
 }
 
 .color:hover {

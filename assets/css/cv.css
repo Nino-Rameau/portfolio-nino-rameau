@@ -32,7 +32,7 @@ body.ClairSombre .sans-fond {
 
 .img_cv_photo {
   width: 10rem;
-  border-radius: 100%;
+  border-radius: var(--radius-100);
   display: flex;
   margin: auto;
   margin-top: 10px;

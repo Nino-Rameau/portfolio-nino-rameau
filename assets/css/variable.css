@@ -37,12 +37,12 @@
   --gap-m: 2rem;
 
   /* bordure */
-  --border-s-noir: solid 1px #101010;
-  --border-s-noir: solid 2px #101010;
-  --border-m-noir: solid 3px #101010;
+  --border-s-noir: solid 1px var(--color-noir);
+  --border-s-noir: solid 2px var(--color-noir);
+  --border-m-noir: solid 3px var(--color-noir);
 
-  --border-s-blanc: solid 1px #ffffff;
-  --border-m-blanc: solid 3px #ffffff;
+  --border-s-blanc: solid 1px var(--color-blanc);
+  --border-m-blanc: solid 3px var(--color-blanc);
 
   --border-xs-bleu-fonce: solid 3px var(--color-bleu-fonce);
   --border-s-bleu-fonce: solid 5px var(--color-bleu-fonce);
@@ -50,4 +50,19 @@
   --border-l-bleu-fonce: solid 15px var(--color-bleu-fonce);
   --border-xl-bleu-fonce: solid 30px var(--color-bleu-fonce);
   --border-xxl-bleu-fonce: solid 35px var(--color-bleu-fonce);
+
+  /* arrondis */
+  --radius-xxs: 5px;
+  --radius-xs: 10px;
+  --radius-m: 15px;
+  --radius-l: 20px;
+  --radius-50: 50%;
+  --radius-100: 100%;
+
+  /* box shadow */
+  --shadow-s-bleu-clair-secondaire: 0px 0px 20px #30feff;
+  --shadow-m-bleu-clair-secondaire: 0px 0px 60px #30feff;
+
+  --shadow-s-bleu-fonce-secondaire: 0px 0px 20px #3000f0;
+  --shadow-m-bleu-fonce-secondaire: 0px 0px 60px #3000f0;
 }

@@ -2,7 +2,7 @@
 
 .bloc-barre-prog-language {
   width: 80%;
-  border-radius: 20px;
+  border-radius: var(--radius-l);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,12 @@ h2 {
 .barre {
   width: 100%;
   background: var(--color-fond-barre-progress);
-  border-radius: 5px;
+  border-radius: var(--radius-xxs);
 }
 
 .barre-stat {
   padding: 8px 10px 8px 0px;
-  border-radius: 5px;
+  border-radius: var(--radius-xxs);
   transition: width 0.3s ease-in-out;
 }
 

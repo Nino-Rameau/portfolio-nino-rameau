@@ -14,7 +14,7 @@ a {
 
 .btn_retour {
   background-color: var(--color-bleu-clair);
-  border-radius: 15px;
+  border-radius: var(--radius-m);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -54,7 +54,7 @@ body.ClairSombre .btn_retour {
   text-align: center;
   background-color: var(--color-bleu-fonce);
   color: var(--color-blanc);
-  border-radius: 20px;
+  border-radius: var(--radius-l);
   margin-top: 15px;
   margin-left: 5px;
   padding: var(--padding-s);
@@ -169,7 +169,7 @@ body.ClairSombre .img-lien-github {
     padding-bottom: 60px;
     gap: 25px;
     background-color: var(--color-bleu-clair);
-    border-radius: 20px;
+    border-radius: var(--radius-l);
     padding-top: 10px;
     border: none;
   }
@@ -212,12 +212,12 @@ body.ClairSombre .img-lien-github {
 }
 
 body.ClairSombre .projet-tag p {
-  color: black;
+  color: var(--color-noir);
 }
 
 .tag {
   display: none;
-  border-radius: 20px;
+  border-radius: var(--radius-l);
   max-width: min-content;
   padding: var(--padding-xs);
   margin: 0px;
@@ -313,7 +313,7 @@ input[type="radio"] {
 .navigation label {
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   cursor: pointer;
 }
 

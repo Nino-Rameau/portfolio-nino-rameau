@@ -266,7 +266,7 @@ header {
     gap: var(--gap-m);
   }
   header nav a {
-    border-radius: 15px;
+    border-radius: var(--radius-m);
     box-shadow: 0px 0px 60px var(--color-bleu-fonce);
   }
   header nav a:hover {
@@ -274,14 +274,14 @@ header {
   }
   header nav a.active {
     background-color: var(--color-bleu-clair);
-    box-shadow: 0px 0px 20px #30feff;
+    box-shadow: var(--shadow-s-bleu-clair-secondaire);
   }
   header nav a:hover {
     background-color: var(--color-bleu-milieu);
   }
   body.ClairSombre header nav a.active {
     background-color: var(--color-bleu-fonce);
-    box-shadow: 0px 0px 20px #3000f0;
+    box-shadow: var(--shadow-s-bleu-fonce-secondaire);
   }
 }
 
@@ -457,18 +457,18 @@ h1 {
   margin: var(--margin-xl);
   background-color: var(--color-bleu-clair);
   padding: 1rem 0.6rem;
-  border-radius: 20px;
+  border-radius: var(--radius-l);
   color: black;
   transition: 0.6s;
-  box-shadow: 0px 0px 60px #30feff;
+  box-shadow: var(--shadow-m-bleu-clair-secondaire);
 }
 
 body.ClairSombre h1 {
-  box-shadow: 0px 0px 60px #3000f0;
+  box-shadow: var(--shadow-m-bleu-fonce-secondaire);
 }
 
 h1:hover {
-  background: rgb(2, 29, 78);
+  background: var(--color-bleu-fonce);
   background: linear-gradient(
     270deg,
     rgba(10, 45, 110, 0.681) 0%,
@@ -546,7 +546,7 @@ body.ClairSombre .lien_entreprise {
   text-align: center;
   color: var(--color-noir);
   background-color: var(--color-bleu-clair);
-  border-radius: 10px;
+  border-radius: var(--radius-xs);
   max-width: min-content;
   white-space: nowrap;
   padding: var(--padding-s);
@@ -643,12 +643,12 @@ img {
   display: flex;
   margin: auto;
   height: 10em;
-  border-radius: 100%;
+  border-radius: var(--radius-100);
   margin-top: 25px;
-  box-shadow: 0px 0px 25px #30feff;
+  box-shadow: var(--shadow-s-bleu-clair-secondaire);
 }
 body.ClairSombre .photo_nino {
-  box-shadow: 0px 0px 25px #3000f0;
+  box-shadow: var(--shadow-s-bleu-fonce-secondaire);
 }
 /* ---------------------------------------
                 AUTRE
