@@ -645,8 +645,11 @@ img {
   height: 10em;
   border-radius: 100%;
   margin-top: 25px;
+  box-shadow: 0px 0px 25px #30feff;
 }
-
+body.ClairSombre .photo_nino {
+  box-shadow: 0px 0px 25px #3000f0;
+}
 /* ---------------------------------------
                 AUTRE
 ----------------------------------------*/
