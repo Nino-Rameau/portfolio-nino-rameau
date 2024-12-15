@@ -278,15 +278,15 @@ body.ClairSombre #exel {
 }
 
 .carte-certif {
-  margin: 10px 10px;
-  width: 220px;
+  margin: 30px 40px;
+  width: 250px;
   height: 300px;
   perspective: 1000px;
 }
 
 .titre-certif {
-  font-size: 1.4rem;
-  text-align: center;
+  font-size: var(--typo-size-l);
+  padding: 0px 10px;
 }
 
 .carte {
@@ -327,4 +327,42 @@ body.ClairSombre #exel {
   .carte-certif:focus .carte {
     transform: rotateY(180deg);
   }
+}
+
+.logo-carte-certification {
+  max-height: 55px;
+  display: flex;
+  margin: auto;
+}
+
+.fleche-verso-carte-certification {
+  padding-left: 80%;
+  padding-bottom: 15px;
+  width: 20px;
+  color: var(--color-noir);
+}
+
+body.ClairSombre .fleche-verso-carte-certification {
+  color: var(--color-blanc);
+}
+
+.titre-objectif-certification {
+  text-align: center;
+}
+
+.carte-certif-face-arriere ul li {
+  text-align: left;
+}
+
+body.ClairSombre .carte-certif-face-arriere ul li {
+  color: var(--color-blanc);
+  padding-right: 10px;
+}
+
+.carte-certif-face-arriere a {
+  color: var(--color-noir);
+}
+
+body.ClairSombre .carte-certif-face-arriere a {
+  color: var(--color-blanc);
 }
