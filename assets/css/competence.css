@@ -268,24 +268,57 @@ body.ClairSombre #exel {
                 COMPETENCE
 ----------------------------------------*/
 
-.carte-certification-x3 {
+.carte-certif-x4 {
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  margin-bottom: 5em;
+  justify-content: space-around;
 }
 
-.carte-certification {
+.carte-certif {
   margin: 10px 10px;
-  width: 22%;
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 25px;
-  min-width: 120px;
-  min-height: 150px;
-  background-color: var(--color-bleu-clair);
-  box-shadow: 0px 0px 60px #30f;
+  width: 220px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.titre-certif {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.carte {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.carte-certif:hover .carte {
+  transform: rotateY(180deg);
+}
+
+.carte-certif-face-avant,
+.carte-certif-face-arriere {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  background: linear-gradient(
+    270deg,
+    rgba(10, 45, 110, 0.681) 0%,
+    rgba(28, 131, 216, 0.873) 60%
+  );
+  color: black;
+}
+
+.carte-certif-face-arriere {
+  transform: rotateY(180deg);
 }
