@@ -38,7 +38,6 @@
 
   /* bordure */
   --border-s-noir: solid 1px var(--color-noir);
-  --border-s-noir: solid 2px var(--color-noir);
   --border-m-noir: solid 3px var(--color-noir);
 
   --border-s-blanc: solid 1px var(--color-blanc);

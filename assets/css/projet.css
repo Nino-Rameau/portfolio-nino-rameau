@@ -19,8 +19,6 @@ a {
   bottom: 20px;
   right: 20px;
   border: var(--border-s-noir);
-  /* padding-left: 0.4rem;
-  padding-right: 0.4rem; */
   padding: 0.4rem 0.6rem 0.4rem 0.6rem;
   font-size: var(--typo-size-xl);
   z-index: 20;
@@ -37,12 +35,6 @@ body.ClairSombre .btn_retour {
 
 .sommaire {
   padding-left: 30px;
-}
-
-@media screen and (min-width: 720px) {
-  .sommaire {
-    padding-left: 8%;
-  }
 }
 
 .btn_sommaire {
@@ -65,18 +57,6 @@ body.ClairSombre .btn_retour {
 .btn_sommaire:hover {
   background-color: var(--color-bleu-clair);
   color: var(--color-noir);
-}
-
-@media screen and (min-width: 720px) {
-  .btn_sommaire {
-    max-width: min-content;
-    white-space: nowrap;
-  }
-}
-
-.colonne {
-  border-top: var(--border-s-noir);
-  margin-top: 15px;
 }
 
 /* ------------------------------------------
@@ -108,6 +88,10 @@ body.ClairSombre .img-lien-github {
   margin: auto;
 }
 
+/* ------------------------------------------
+                RESPONSIVE
+-------------------------------------------*/
+
 @media screen and (max-width: 720px) {
   .carousel {
     max-width: 400px;
@@ -124,39 +108,46 @@ body.ClairSombre .img-lien-github {
   .carousel {
     max-width: 450px;
   }
+
   .img_projet {
     max-width: 450px;
   }
+
+  .btn_sommaire {
+    max-width: min-content;
+    white-space: nowrap;
+  }
+
+  .sommaire {
+    padding-left: 8%;
+  }
 }
-/* TODO entre 720px et 1024px bug affichage marge et texte align */
+
+@media screen and (max-width: 1024px) {
+  .colonne {
+    border-top: var(--border-s-noir);
+    margin-top: 15px;
+  }
+
+  body.ClairSombre .colonne {
+    border-top: var(--border-s-blanc);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .carousel {
     max-width: 500px;
   }
+
   .img_projet {
     max-width: 800px;
     margin-top: 15px;
   }
+
   .img-lien-github {
     width: 85px;
   }
-}
 
-/* ------------------------------------------
-            colonne POUR GRAND ECRAN
--------------------------------------------*/
-
-@media screen and (min-width: 720px) {
-  .colonne {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
   .colonne {
     width: 85%;
     margin: auto;
@@ -171,7 +162,6 @@ body.ClairSombre .img-lien-github {
     background-color: var(--color-bleu-clair);
     border-radius: var(--radius-l);
     padding-top: 10px;
-    border: none;
   }
 
   body.ClairSombre .colonne {
@@ -198,10 +188,11 @@ body.ClairSombre .img-lien-github {
 .projet-tag {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   margin: 0px;
   gap: 8px;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .projet-tag a,
@@ -216,11 +207,12 @@ body.ClairSombre .projet-tag p {
 }
 
 .tag {
-  display: none;
   border-radius: var(--radius-l);
   max-width: min-content;
   padding: var(--padding-xs);
   margin: 0px;
+  opacity: 80%;
+  white-space: nowrap;
 }
 
 .python {
@@ -253,6 +245,10 @@ body.ClairSombre .projet-tag p {
 
 .charte-graph {
   background-color: #64f564;
+}
+
+.figma {
+  background-color: #fe7667;
 }
 
 .equipe {
