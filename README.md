@@ -15,16 +15,9 @@ Il est disponible ici : https://nino-rameau.github.io/portfolio-nino-rameau/inde
 
 ## Sommaire
 
-- [Aperçu](#aperçu)
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies Utilisées](#technologies-utilisées)
 - [Licence](#licence)
-
-## Aperçu
-
-![Page d'accueil](accueil.png)
-![Mes compétences](competence.png)
-![Mes projets](projet.png)
 
 ## Fonctionnalités
 
