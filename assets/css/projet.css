@@ -3,6 +3,9 @@
 .img_projet {
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 a {
@@ -80,12 +83,6 @@ body.ClairSombre .btn_retour {
 
 body.ClairSombre .img-lien-github {
   color: var(--color-blanc);
-}
-
-.img_projet {
-  display: flex;
-  align-items: center;
-  margin: auto;
 }
 
 /* ------------------------------------------
@@ -218,7 +215,7 @@ body.ClairSombre .projet-tag p {
 }
 
 .python {
-  background-color: #4082b4;
+  background-color: #4d9dda;
 }
 
 .php {
@@ -226,15 +223,15 @@ body.ClairSombre .projet-tag p {
 }
 
 .mysql {
-  background-color: #055f87;
+  background-color: #929394;
 }
 
 .html {
-  background-color: #e54d26;
+  background-color: #ff7415;
 }
 
 .css {
-  background-color: #0170be;
+  background-color: #2694e4;
 }
 
 .js {
@@ -254,7 +251,7 @@ body.ClairSombre .projet-tag p {
 }
 
 .equipe {
-  background-color: #ff7415;
+  background-color: #eb7e62;
 }
 
 /* ------------------------------------------
