@@ -291,7 +291,7 @@ body.ClairSombre .projet-tag p {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--color-blanc);
   border: none;
   cursor: pointer;
   z-index: 10;
@@ -318,11 +318,11 @@ body.ClairSombre .projet-tag p {
   width: 10px;
   height: 10px;
   margin: 0 5px;
-  background-color: rgb(96, 173, 218);
+  background-color: var(--color-bleu-clair);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .point.actif {
-  background-color: rgb(17, 15, 109);
+  background-color: var(--color-bleu-fonce);
 }
