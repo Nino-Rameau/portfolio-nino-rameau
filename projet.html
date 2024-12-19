@@ -331,30 +331,48 @@
         </div>
 
         <div class="elt">
-          <div class="carousel">
-            <!-- TODO carousel auto et ajout de fleche (pas non manuel avec point comme actuellement)-->
-            <!-- TODO slide pour tactile  -->
-            <input type="radio" name="slides4" id="slide16" checked />
-            <input type="radio" name="slides4" id="slide17" />
-
-            <div class="slides">
-              <div class="slide">
+          <div class="container-carrousel" id="carousel-4">
+            <div class="carrousel">
+              <div class="diapo">
                 <img
                   src="assets/img/projet_BDE_NW5/AfficheNW5.jpg"
                   alt="Affiche Normandie Web Five"
                 />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img
                   src=" assets/img/projet_BDE_NW5/logoNW5.jpg"
                   alt="Logo Normandie Web Five"
                 />
               </div>
             </div>
-            <div class="navigation">
-              <label for="slide16"></label>
-              <label for="slide17"></label>
-            </div>
+            <button class="precedent">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"
+                />
+              </svg>
+            </button>
+            <button class="suivant">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                />
+              </svg>
+            </button>
+            <div class="points-navigation"></div>
           </div>
         </div>
       </div>
@@ -379,53 +397,60 @@
         </div>
 
         <div class="elt">
-          <div class="carousel">
-            <input type="radio" name="slides1" id="slide1" checked />
-            <input type="radio" name="slides1" id="slide2" />
-            <input type="radio" name="slides1" id="slide3" />
-            <input type="radio" name="slides1" id="slide4" />
-            <input type="radio" name="slides1" id="slide5" />
-            <input type="radio" name="slides1" id="slide6" />
-            <input type="radio" name="slides1" id="slide7" />
-            <input type="radio" name="slides1" id="slide8" />
-
-            <div class="slides">
-              <div class="slide">
+          <div class="container-carrousel" id="carousel-3">
+            <div class="carrousel">
+              <div class="diapo">
                 <img src="assets/img/interview/1.png" alt="Image 1" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/2.png" alt="Image 2" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/3.png" alt="Image 3" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/4.png" alt="Image 4" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/5.png" alt="Image 5" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/6.png" alt="Image 6" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/7.png" alt="Image 7" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/interview/8.png" alt="Image 8" />
               </div>
             </div>
-
-            <div class="navigation" id="mini-jeux">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
-              <label for="slide4"></label>
-              <label for="slide5"></label>
-              <label for="slide6"></label>
-              <label for="slide7"></label>
-              <label for="slide8"></label>
-            </div>
+            <button class="precedent">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"
+                />
+              </svg>
+            </button>
+            <button class="suivant">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                />
+              </svg>
+            </button>
+            <div class="points-navigation"></div>
           </div>
         </div>
       </div>
@@ -453,37 +478,53 @@
           </div>
         </div>
         <div class="elt">
-          <div class="carousel">
-            <input type="radio" name="slides2" id="slide9" checked />
-            <input type="radio" name="slides2" id="slide10" />
-            <input type="radio" name="slides2" id="slide11" />
-            <input type="radio" name="slides2" id="slide12" />
-
-            <div class="slides">
-              <div class="slide">
+          <div class="container-carrousel" id="carousel-2">
+            <div class="carrousel">
+              <div class="diapo">
                 <img src="assets/img/mini-jeux/jeu.png" alt="Mini-jeux 1" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/mini-jeux/morpion.png" alt="Mini-jeux 2" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img src="assets/img/mini-jeux/snake.png" alt="Mini-jeux 3" />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img
                   src="assets/img/mini-jeux/classement.png"
                   alt="Mini-jeux 4"
                 />
               </div>
             </div>
-
-            <div class="navigation">
-              <label for="slide9"></label>
-              <label for="slide10"></label>
-              <label for="slide11"></label>
-              <label for="slide12"></label>
-            </div>
+            <button class="precedent">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"
+                />
+              </svg>
+            </button>
+            <button class="suivant">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                />
+              </svg>
+            </button>
+            <div class="points-navigation"></div>
           </div>
+
           <p id="badge-rfid">
             Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :
           </p>
@@ -569,37 +610,54 @@
           </div>
         </div>
         <div class="elt">
-          <div class="carousel">
-            <input type="radio" name="slides3" id="slide13" checked />
-            <input type="radio" name="slides3" id="slide14" />
-            <input type="radio" name="slides3" id="slide15" />
-
-            <div class="slides">
-              <div class="slide">
+          <div class="container-carrousel" id="carousel-1">
+            <div class="carrousel">
+              <div class="diapo">
                 <img
                   src="assets/img/quiz_guyane/1.png"
                   alt="image quiz guyane 1"
                 />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img
                   src="assets/img/quiz_guyane/2.png"
                   alt="image quiz guyane 2"
                 />
               </div>
-              <div class="slide">
+              <div class="diapo">
                 <img
                   src="assets/img/quiz_guyane/3.png"
                   alt="image quiz guyane 3"
                 />
               </div>
             </div>
-
-            <div class="navigation">
-              <label for="slide13"></label>
-              <label for="slide14"></label>
-              <label for="slide15"></label>
-            </div>
+            <button class="precedent">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"
+                />
+              </svg>
+            </button>
+            <button class="suivant">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                />
+              </svg>
+            </button>
+            <div class="points-navigation"></div>
           </div>
           <p id="maison-turtle">
             Pour plus d’informations sur le codage, cliquez sur l’icône GitHub :

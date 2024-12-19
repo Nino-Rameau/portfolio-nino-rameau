@@ -93,8 +93,9 @@ body.ClairSombre .img-lien-github {
 -------------------------------------------*/
 
 @media screen and (max-width: 720px) {
-  .carousel {
+  .carrousel {
     max-width: 400px;
+    margin: auto;
   }
   .img_projet {
     max-width: 400px;
@@ -105,8 +106,9 @@ body.ClairSombre .img-lien-github {
 }
 
 @media screen and (min-width: 720px) {
-  .carousel {
+  .carrousel {
     max-width: 450px;
+    margin: auto;
   }
 
   .img_projet {
@@ -135,7 +137,7 @@ body.ClairSombre .img-lien-github {
 }
 
 @media screen and (min-width: 1024px) {
-  .carousel {
+  .carrousel {
     max-width: 500px;
   }
 
@@ -259,128 +261,71 @@ body.ClairSombre .projet-tag p {
                     CAROUSEL 
 -------------------------------------------*/
 
-.carousel {
+.container-carrousel {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 0.5em;
-  overflow: hidden; /* Affiche une seule slide à la fois */
-  border: var(--border-s-noir);
-  z-index: 1;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  margin: auto;
+  top: 15px;
 }
 
-.slides {
+.carrousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
-.slide {
+.diapo {
   min-width: 100%;
-  box-sizing: border-box;
+  transition: transform 0.75s linear;
+  margin: auto;
 }
 
-.slide img {
+.diapo img {
   width: 100%;
   display: block;
-  height: auto;
+  object-fit: cover;
 }
 
-input[type="radio"] {
-  display: none;
+.precedent,
+.suivant {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
 }
 
-.navigation {
+.precedent {
+  left: 10px;
+}
+
+.suivant {
+  right: 10px;
+}
+
+.points-navigation {
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.navigation label {
-  width: 15px;
-  height: 15px;
-  border-radius: var(--radius-50);
+  width: 100%;
   cursor: pointer;
 }
 
-/* CAROUSEL INTERVIEW  */
-input#slide1:checked ~ .slides {
-  transform: translateX(0%);
+.point {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: rgb(96, 173, 218);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-input#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-input#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-input#slide4:checked ~ .slides {
-  transform: translateX(-300%);
-}
-
-input#slide5:checked ~ .slides {
-  transform: translateX(-400%);
-}
-
-input#slide6:checked ~ .slides {
-  transform: translateX(-500%);
-}
-
-input#slide7:checked ~ .slides {
-  transform: translateX(-600%);
-}
-
-input#slide8:checked ~ .slides {
-  transform: translateX(-700%);
-}
-
-/* CAROUSEL MINI JEU  */
-
-input#slide9:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-input#slide10:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-input#slide11:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-input#slide12:checked ~ .slides {
-  transform: translateX(-300%);
-}
-
-/* QUIZ GUYANE */
-
-input#slide13:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-input#slide14:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-input#slide15:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-/* PROJET BDE NW5 */
-
-input#slide16:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-input#slide17:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-input:checked ~ .navigation label {
-  background: #333;
+.point.actif {
+  background-color: rgb(17, 15, 109);
 }
