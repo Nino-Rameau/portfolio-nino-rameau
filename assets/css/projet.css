@@ -250,8 +250,16 @@ body.ClairSombre .projet-tag p {
   background-color: #fe7667;
 }
 
+.canva {
+  background-color: #71d4e8;
+}
+
 .equipe {
-  background-color: #eb7e62;
+  background-color: #c69ea5;
+}
+
+.individuel {
+  background-color: #b771e8;
 }
 
 /* ------------------------------------------
