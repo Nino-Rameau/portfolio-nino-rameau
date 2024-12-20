@@ -100,6 +100,10 @@ body.ClairSombre .img-lien-github {
   .img-lien-github {
     width: 75px;
   }
+
+  .elt {
+    min-width: 100%;
+  }
 }
 
 @media screen and (min-width: 720px) {
