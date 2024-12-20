@@ -36,10 +36,6 @@ body.ClairSombre .btn_retour {
   background-color: var(--color-bleu-fonce);
 }
 
-.sommaire {
-  padding-left: 30px;
-}
-
 .btn_sommaire {
   display: flex;
   flex-direction: column;
