@@ -125,7 +125,7 @@ body.ClairSombre .img-lien-github {
 @media screen and (max-width: 1024px) {
   .colonne {
     border-top: var(--border-s-noir);
-    margin-top: 15px;
+    margin-top: 30px;
   }
 
   body.ClairSombre .colonne {
