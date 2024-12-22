@@ -534,34 +534,91 @@ body.ClairSombre .lien_entreprise {
   color: var(--color-blanc);
 }
 
-.telecharger-pdf {
+/* ---------------------------------------
+                  BUTTON
+----------------------------------------*/
+
+.button {
+  position: relative;
+  width: 220px;
+  height: 40px;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
+  flex-wrap: nowrap;
   align-items: center;
-  border: var(--border-m-noir);
-  text-align: center;
-  color: var(--color-noir);
+  border: solid 1px var(--color-noir);
   background-color: var(--color-bleu-clair);
-  border-radius: var(--radius-xs);
-  max-width: min-content;
-  white-space: nowrap;
-  padding: var(--padding-s);
-  font-size: var(--typo-size-xl);
+  overflow: hidden;
+  border-radius: 15px;
+  margin: auto;
   text-decoration: none;
+  box-shadow: 0 0 5px var(--color-bleu-milieu);
 }
 
-.telecharger-pdf:hover {
-  scale: 1.1;
+body.ClairSombre .button {
+  background-color: var(--color-bleu-milieu);
 }
 
-@media screen and (max-width: 450px) {
-  .telecharger-pdf {
-    white-space: wrap;
-  }
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  padding-left: 5%;
+  color: var(--color-noir);
+  font-family: var(--typo-titre);
+  font-size: var(--typo-size-xs);
+}
+
+body.ClairSombre .button .button__text {
+  color: var(--color-bleu-clair);
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(181px);
+  height: 100%;
+  width: 40px;
+  background-color: var(--color-bleu-clair);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: solid 1px var(--color-noir);
+}
+
+body.ClairSombre .button .button__icon {
+  background-color: var(--color-bleu-fonce);
+  border: none;
+}
+
+.button .svg {
+  width: 20px;
+  color: var(--color-bleu-fonce);
+}
+
+body.ClairSombre .button .svg {
+  color: var(--color-bleu-clair);
+}
+
+.button:hover {
+  background: var(--color-bleu-clair);
+}
+
+body.ClairSombre .button:hover {
+  background: var(--color-bleu-fonce);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 220px;
+  transform: translateX(0px);
+  border: none;
 }
 
 /* ---------------------------------------

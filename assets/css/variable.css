@@ -12,6 +12,7 @@
   --typo-texte: "IBM Plex Mono", monospace;
 
   /* taille typo */
+  --typo-size-xs: 0.85em;
   --typo-size-s: 1rem;
   --typo-size-m: 1.1rem;
   --typo-size-l: 1.2rem;

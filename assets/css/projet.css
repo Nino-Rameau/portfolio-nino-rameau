@@ -48,7 +48,7 @@ body.ClairSombre .btn_retour {
   border-radius: var(--radius-l);
   margin-top: 15px;
   margin-left: 5px;
-  padding: var(--padding-s);
+  padding: var(--padding-m);
   font-size: var(--typo-size-s);
   white-space: normal;
 }
@@ -118,7 +118,8 @@ body.ClairSombre .img-lien-github {
   }
 
   .sommaire {
-    padding-left: 8%;
+    padding-left: 10%;
+    margin-bottom: 75px;
   }
 }
 
@@ -177,6 +178,10 @@ body.ClairSombre .img-lien-github {
   .titre-projet,
   body.ClairSombre .titre-projet {
     border: none;
+  }
+
+  .sommaire {
+    padding-left: 20%;
   }
 }
 
