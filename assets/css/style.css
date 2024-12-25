@@ -567,7 +567,7 @@ body.ClairSombre .button {
 
 .button .button__text {
   padding-left: 5%;
-  color: var(--color-noir);
+  color: var(--color-bleu-fonce);
   font-family: var(--typo-titre);
   font-size: var(--typo-size-xs);
 }
@@ -601,18 +601,6 @@ body.ClairSombre .button .button__icon {
 
 body.ClairSombre .button .svg {
   color: var(--color-bleu-clair);
-}
-
-.button:hover {
-  background: var(--color-bleu-clair);
-}
-
-body.ClairSombre .button:hover {
-  background: var(--color-bleu-fonce);
-}
-
-.button:hover .button__text {
-  color: transparent;
 }
 
 .button:hover .button__icon {
