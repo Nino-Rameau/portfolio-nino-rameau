@@ -702,3 +702,11 @@ body.ClairSombre .photo_nino {
 .pas_point {
   list-style-type: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .footer-bas-forcer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
