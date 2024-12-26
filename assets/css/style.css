@@ -268,8 +268,13 @@ header {
   }
   header nav a {
     border-radius: var(--radius-m);
-    box-shadow: 0px 0px 60px var(--color-bleu-fonce);
+    box-shadow: var(--shadow-s-bleu-clair);
   }
+
+  body.ClairSombre header nav a {
+    box-shadow: var(--shadow-s-bleu-fonce-secondaire);
+  }
+
   header nav a:hover {
     background-color: var(--color-bleu-clair);
   }
