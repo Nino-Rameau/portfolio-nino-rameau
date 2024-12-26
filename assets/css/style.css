@@ -8,6 +8,7 @@ html,
 body {
   margin: var(--margin-0);
   padding: var(--padding-0);
+  height: 100%;
 }
 
 body {
