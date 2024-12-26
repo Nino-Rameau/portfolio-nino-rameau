@@ -274,7 +274,7 @@ header {
   }
   header nav a.active {
     background-color: var(--color-bleu-clair);
-    box-shadow: var(--shadow-s-bleu-clair-secondaire);
+    box-shadow: var(--shadow-s-bleu-clair);
   }
   header nav a:hover {
     background-color: var(--color-bleu-milieu);
@@ -460,7 +460,7 @@ h1 {
   border-radius: var(--radius-l);
   color: black;
   transition: 0.6s;
-  box-shadow: var(--shadow-m-bleu-clair-secondaire);
+  box-shadow: var(--shadow-m-bleu-clair);
 }
 
 body.ClairSombre h1 {
@@ -690,7 +690,7 @@ img {
   height: 10em;
   border-radius: var(--radius-100);
   margin-top: 25px;
-  box-shadow: var(--shadow-s-bleu-clair-secondaire);
+  box-shadow: var(--shadow-s-bleu-clair);
 }
 body.ClairSombre .photo_nino {
   box-shadow: var(--shadow-s-bleu-fonce-secondaire);

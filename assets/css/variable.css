@@ -1,6 +1,7 @@
 :root {
   /* couleurs */
   --color-bleu-fonce: #28337e;
+  --color-bleu-fonce-secondaire: #3000f0;
   --color-bleu-milieu: #4269b1;
   --color-bleu-clair: #acddf6;
   --color-noir: #101010;
@@ -60,9 +61,11 @@
   --radius-100: 100%;
 
   /* box shadow */
-  --shadow-s-bleu-clair-secondaire: 0px 0px 20px #30feff;
-  --shadow-m-bleu-clair-secondaire: 0px 0px 60px #30feff;
+  --shadow-s-bleu-clair: 0px 0px 20px var(--color-bleu-clair);
+  --shadow-m-bleu-clair: 0px 0px 60px var(--color-bleu-clair);
 
-  --shadow-s-bleu-fonce-secondaire: 0px 0px 20px #3000f0;
-  --shadow-m-bleu-fonce-secondaire: 0px 0px 60px #3000f0;
+  --shadow-s-bleu-fonce-secondaire: 0px 0px 20px
+    var(--color-bleu-fonce-secondaire);
+  --shadow-m-bleu-fonce-secondaire: 0px 0px 60px
+    var(--color-bleu-fonce-secondaire);
 }
