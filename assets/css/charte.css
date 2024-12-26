@@ -34,8 +34,9 @@ a {
       rgba(127, 127, 127, 0.04) 100%
     ),
     linear-gradient(90deg, hsl(116, 0%, 99%), hsl(116, 0%, 99%));
-  margin: var(--margin-s);
+  margin: var(--margin-m);
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 body.ClairSombre .charte-graphique {

@@ -1,7 +1,7 @@
 @import url("variable.css");
 
 .img_projet {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;

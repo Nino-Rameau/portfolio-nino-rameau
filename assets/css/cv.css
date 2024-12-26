@@ -21,9 +21,8 @@ body.ClairSombre .sans-fond {
 .cv {
   display: grid;
   grid-template-columns: 1fr;
-  width: 95%;
   margin: auto;
-  margin: var(--margin-s);
+  margin: var(--margin-m);
 }
 
 /* -----------------------------------------------
