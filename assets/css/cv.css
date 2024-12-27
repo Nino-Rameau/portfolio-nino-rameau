@@ -22,7 +22,13 @@ body.ClairSombre .sans-fond {
   display: grid;
   grid-template-columns: 1fr;
   margin: auto;
-  margin: var(--margin-m);
+  margin: var(--margin-s);
+}
+
+@media screen and (min-width: 1024px) {
+  .cv {
+    margin: var(--margin-m);
+  }
 }
 
 /* -----------------------------------------------

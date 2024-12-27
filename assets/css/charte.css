@@ -34,9 +34,15 @@ a {
       rgba(127, 127, 127, 0.04) 100%
     ),
     linear-gradient(90deg, hsl(116, 0%, 99%), hsl(116, 0%, 99%));
-  margin: var(--margin-m);
+  margin: var(--margin-s);
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .charte-graphique {
+    margin: var(--margin-m);
+  }
 }
 
 body.ClairSombre .charte-graphique {
