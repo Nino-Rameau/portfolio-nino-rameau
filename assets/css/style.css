@@ -84,6 +84,12 @@ body {
       rgba(55, 55, 55, 0) 99%
     ),
     linear-gradient(0deg, rgb(33, 97, 211), rgb(145, 214, 250));
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 body.ClairSombre {
@@ -181,6 +187,7 @@ header {
     var(--color-bleu-milieu)
   );
   height: 80px;
+  width: 100%;
 }
 
 body.ClairSombre header {
@@ -344,6 +351,7 @@ footer {
   height: 5em;
   background-color: var(--color-bleu-clair);
   margin-top: 25px;
+  width: 100%;
 }
 
 body.ClairSombre footer {
@@ -706,12 +714,4 @@ body.ClairSombre .photo_nino {
 
 .pas_point {
   list-style-type: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .footer-bas-forcer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
 }
