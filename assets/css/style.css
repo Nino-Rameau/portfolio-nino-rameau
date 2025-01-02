@@ -358,7 +358,8 @@ body.ClairSombre footer {
   background-color: var(--color-bleu-fonce);
 }
 
-body.ClairSombre .texteFoother {
+body.ClairSombre .texteFoother,
+body.ClairSombre .texteFoother a {
   color: var(--color-blanc);
 }
 .colonneFoother {
@@ -373,7 +374,8 @@ body.ClairSombre .texteFoother {
   justify-content: center;
 }
 
-.texteFoother {
+.texteFoother,
+.texteFoother a {
   font-family: var(--typo-texte);
   font-size: var(--typo-size-s);
   color: var(--color-noir);
@@ -708,6 +710,22 @@ img {
 body.ClairSombre .photo_nino {
   box-shadow: var(--shadow-s-bleu-fonce-secondaire);
 }
+
+/* ---------------------------------------
+            MENTIONS LEGALES
+----------------------------------------*/
+.mentions-legal {
+  margin-left: 5%;
+}
+
+.mentions-legal p a {
+  color: var(--color-noir);
+}
+
+body.ClairSombre .mentions-legal p a {
+  color: var(--color-blanc);
+}
+
 /* ---------------------------------------
                 AUTRE
 ----------------------------------------*/
