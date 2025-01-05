@@ -531,7 +531,8 @@ body.ClairSombre h4 {
 /* Paragraphe*/
 
 p,
-.lien_entreprise {
+.lien_entreprise,
+.lien_site_projet {
   font-family: var(--typo-texte);
   font-size: var(--typo-size-s);
   color: var(--color-noir);
@@ -544,8 +545,13 @@ p,
   margin: var(--margin-0);
 }
 
+.lien_site_projet {
+  text-decoration: underline;
+}
+
 body.ClairSombre p,
-body.ClairSombre .lien_entreprise {
+body.ClairSombre .lien_entreprise,
+body.ClairSombre .lien_site_projet {
   color: var(--color-blanc);
 }
 
