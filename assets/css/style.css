@@ -594,7 +594,7 @@ body.ClairSombre .button {
 }
 
 body.ClairSombre .button .button__text {
-  color: var(--color-bleu-clair);
+  color: var(--color-blanc);
 }
 
 .button .button__icon {
