@@ -204,7 +204,7 @@ body.ClairSombre .btn_sommaire:hover {
     top: 80px;
     background-color: var(--color-bleu-milieu);
     padding: var(--padding-m);
-    max-height: 600px;
+    height: calc(100vh - 80px);
     overflow-y: scroll;
     scrollbar-color: var(--color-bleu-fonce) var(--color-bleu-clair);
     width: 250px;
