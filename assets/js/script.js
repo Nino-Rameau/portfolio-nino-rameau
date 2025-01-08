@@ -91,6 +91,10 @@ function carrousel() {
 
 function animer() {
   var txt = document.querySelector(".txt-animer"); // zone ou est affiché le texte
+  if (!txt) {
+    console.error("erreur texte animer");
+    return;
+  }
   var texteComplet = "Nino Rameau"; // Texte à afficher
   var texte = ""; // texte en cours d'affichage
   var effacer = false; // false ou vrai pour texte en cours ou non d'effacement

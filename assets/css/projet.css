@@ -1,5 +1,32 @@
 @import url("variable.css");
 
+/* ------------------------------------------
+                    texte
+-------------------------------------------*/
+
+.titre-projet {
+  text-align: center;
+}
+
+.description-projet {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-lien-github {
+  display: flex;
+  width: 50px;
+  margin: auto;
+}
+
+body.ClairSombre .img-lien-github {
+  color: var(--color-blanc);
+}
+
+/* ------------------------------------------
+              IMG ET BTN 
+-------------------------------------------*/
+
 .img_projet {
   width: 100%;
   height: auto;
@@ -43,14 +70,19 @@ body.ClairSombre .btn_retour {
   justify-content: center;
   border: none;
   text-align: center;
-  background-color: var(--color-bleu-fonce);
-  color: var(--color-blanc);
+  color: var(--color-noir);
+  background-color: var(--color-bleu-clair);
+
   border-radius: var(--radius-l);
   margin-top: 15px;
-  margin-left: 5px;
   padding: var(--padding-m);
   font-size: var(--typo-size-s);
   white-space: normal;
+}
+
+body.ClairSombre .btn_sommaire {
+  background-color: var(--color-bleu-fonce);
+  color: var(--color-blanc);
 }
 
 .btn_sommaire:hover {
@@ -58,27 +90,8 @@ body.ClairSombre .btn_retour {
   color: var(--color-noir);
 }
 
-/* ------------------------------------------
-                    texte
--------------------------------------------*/
-
-.titre-projet {
-  text-align: center;
-}
-
-.description-projet {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.img-lien-github {
-  display: flex;
-  width: 50px;
-  margin: auto;
-}
-
-body.ClairSombre .img-lien-github {
-  color: var(--color-blanc);
+.sommaire-projet ul {
+  padding-left: 0px;
 }
 
 /* ------------------------------------------
@@ -111,16 +124,6 @@ body.ClairSombre .img-lien-github {
   .img_projet {
     max-width: 450px;
   }
-
-  .btn_sommaire {
-    max-width: min-content;
-    white-space: nowrap;
-  }
-
-  .sommaire {
-    padding-left: 10%;
-    margin-bottom: 75px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -149,7 +152,7 @@ body.ClairSombre .img-lien-github {
   }
 
   .colonne {
-    width: 85%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -180,8 +183,24 @@ body.ClairSombre .img-lien-github {
     border: none;
   }
 
-  .sommaire {
-    padding-left: 20%;
+  .sommaire-et-projet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sommaire-projet {
+    position: sticky;
+    top: 80px;
+    background-color: var(--color-bleu-milieu);
+    padding: var(--padding-m);
+    max-height: 600px;
+    overflow-y: scroll;
+    width: 250px;
+  }
+
+  .partie-projet {
+    max-width: 90%;
   }
 }
 
