@@ -87,7 +87,6 @@ body.ClairSombre .btn-sommaire-charte-graph {
 
 body.ClairSombre .btn-sommaire-charte-graph:hover {
   background-color: var(--color-bleu-fonce);
-  color: var(--color-noir);
 }
 
 /* ---------------------------------

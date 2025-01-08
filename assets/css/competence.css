@@ -46,6 +46,7 @@ body.ClairSombre .barre-text {
 #css,
 #js,
 #sql,
+#php,
 #wordpress,
 #git-github,
 #figma,
@@ -65,6 +66,7 @@ body.ClairSombre #html,
 body.ClairSombre #css,
 body.ClairSombre #js,
 body.ClairSombre #sql,
+body.ClairSombre #php,
 body.ClairSombre #wordpress,
 body.ClairSombre #git-github,
 body.ClairSombre #figma,
@@ -135,6 +137,17 @@ body.ClairSombre #exel {
   }
   100% {
     width: 60%;
+  }
+}
+#php {
+  animation: phpSlide 1.5s ease forwards;
+}
+@keyframes phpSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 3%;
   }
 }
 
