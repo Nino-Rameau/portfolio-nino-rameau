@@ -471,6 +471,7 @@ h1 {
   font-size: var(--typo-size-xxl);
   margin: var(--margin-xl);
   background-color: var(--color-bleu-clair);
+  min-height: 42px;
   padding: 1rem 0.6rem;
   border-radius: var(--radius-l);
   color: black;

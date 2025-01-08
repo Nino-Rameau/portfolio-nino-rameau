@@ -89,6 +89,39 @@ function carrousel() {
   });
 }
 
+function animer() {
+  var txt = document.querySelector(".txt-animer"); // zone ou est affiché le texte
+  var texteComplet = "Nino Rameau"; // Texte à afficher
+  var texte = ""; // texte en cours d'affichage
+  var effacer = false; // false ou vrai pour texte en cours ou non d'effacement
+
+  function animation() {
+    if (effacer) {
+      //substring(debut, fin) : Permet d'extraire une partie d'un 'str'.
+      texte = texteComplet.substring(0, texte.length - 1); // Suppression de caractères
+    } else {
+      texte = texteComplet.substring(0, texte.length + 1); // Ajout de caractères
+    }
+
+    txt.innerHTML = texte; // renvoie le texte en cours
+
+    if (!effacer && texte === texteComplet) {
+      // si le texte est en cours d'ecriture est est complet
+      setTimeout(() => (effacer = true), 2000); //  alors l'ecriture est terminé et on declenche le délai pour ensuite effacer le texte
+      // 2000ms avant debut pour effacer
+    } else if (effacer && texte === "") {
+      // si le texte s'efface et est vide
+      effacer = false; // on recommencer à écrire
+      setTimeout(animation, 500); // on declenche un delais de 500ms avant d'ecrire
+      return; // on termine la fonction
+    }
+
+    setTimeout(animation, effacer ? 150 : 200); // Délai entre chaque étape effacement 150ms et ecriture 200ms
+  }
+
+  animation(); // rappel la fonction pour créer un boucle
+}
+
 window.addEventListener("DOMContentLoaded", function () {
   // Charge la gestion menu mobile
   toggleMobileNav();
@@ -96,4 +129,6 @@ window.addEventListener("DOMContentLoaded", function () {
   toggleDarkMode();
   // carrousel
   carrousel();
+  // nom animer
+  animer();
 });
