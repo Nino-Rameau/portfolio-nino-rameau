@@ -72,7 +72,6 @@ body.ClairSombre .btn_retour {
   text-align: center;
   color: var(--color-noir);
   background-color: var(--color-bleu-clair);
-
   border-radius: var(--radius-l);
   margin-top: 15px;
   padding: var(--padding-m);
@@ -86,8 +85,15 @@ body.ClairSombre .btn_sommaire {
 }
 
 .btn_sommaire:hover {
-  background-color: var(--color-bleu-clair);
+  background-color: var(--color-bleu-fonce);
+  color: var(--color-blanc);
+  scale: 1.1;
+}
+
+body.ClairSombre .btn_sommaire:hover {
   color: var(--color-noir);
+  background-color: var(--color-bleu-clair);
+  scale: 1.1;
 }
 
 .sommaire-projet ul {
