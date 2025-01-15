@@ -674,6 +674,58 @@ body.ClairSombre .mentions-legal p a {
 }
 
 /* ---------------------------------------
+            PAGE ACCUEIL
+----------------------------------------*/
+
+.container {
+  margin: var(--margin-xl);
+  background-color: var(--color-bleu-clair);
+  border-radius: 20px;
+  width: 85%;
+  min-width: min-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  background-color: var(--color-bleu-clair);
+  margin-top: 30px;
+}
+
+.elt {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    padding: 5px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .elt {
+    max-width: 47%;
+  }
+}
+.container-accueil {
+  width: 85%;
+}
+
+body.ClairSombre .container {
+  background-color: var(--color-bleu-fonce);
+}
+
+.elt p a {
+  color: var(--color-noir);
+}
+body.ClairSombre .elt p a {
+  color: var(--color-blanc);
+}
+
+/* ---------------------------------------
                 AUTRE
 ----------------------------------------*/
 
