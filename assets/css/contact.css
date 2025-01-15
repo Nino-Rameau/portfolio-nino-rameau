@@ -2,3 +2,71 @@ html,
 body {
   height: 100%;
 }
+
+.contact {
+  background-color: var(--color-bleu-clair);
+  border-radius: 20px;
+  width: 85%;
+  margin-top: 30px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.case-adresse-mail,
+.case-num-tel,
+.case-ville-1,
+.case-ville-2 {
+  display: flex;
+  align-items: center;
+  padding: var(--padding-m);
+  margin: auto;
+}
+
+@media screen and (min-width: 720px) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .case-adresse-mail {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .case-num-tel {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .case-ville-1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .case-ville-2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+body.ClairSombre .contact {
+  background-color: var(--color-bleu-fonce);
+}
+
+.case-adresse-mail a {
+  color: var(--color-noir);
+  padding-left: 5px;
+}
+
+body.ClairSombre .case-adresse-mail a {
+  color: var(--color-blanc);
+}
+
+.svg-contact {
+  color: var(--color-bleu-fonce);
+}
+
+body.ClairSombre .svg-contact {
+  color: var(--color-bleu-clair);
+}

@@ -115,6 +115,9 @@ h3 {
 .typo-ibm-plex-mono {
   font-family: var(--typo-texte);
 }
+.typo-nasalization {
+  font-family: "nasalization", sans-serif;
+}
 
 .logo {
   display: flex;
