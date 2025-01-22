@@ -269,6 +269,14 @@ body.ClairSombre .projet-tag p {
   background-color: #2694e4;
 }
 
+.Tailwind {
+  background-color: #45aab5;
+}
+
+.react {
+  background-color: #00d8ff;
+}
+
 .js {
   background-color: #f7e018;
 }
