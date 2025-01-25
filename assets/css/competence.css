@@ -129,7 +129,7 @@ body.ClairSombre #exel {
     width: 0%;
   }
   100% {
-    width: 10%;
+    width: 15%;
   }
 }
 #js {
@@ -151,7 +151,7 @@ body.ClairSombre #exel {
     width: 0%;
   }
   100% {
-    width: 8%;
+    width: 10%;
   }
 }
 #sql {
@@ -162,7 +162,7 @@ body.ClairSombre #exel {
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 45%;
   }
 }
 #php {
