@@ -10,7 +10,7 @@
 
 body.ClairSombre .cv,
 body.ClairSombre .sans-fond {
-  background-color: var(--color-noir);
+  background-color: #333333;
   border: var(--border-s-blanc);
 }
 
@@ -111,7 +111,7 @@ li a {
 }
 
 body.ClairSombre li a {
-  background-color: var(--color-noir);
+  background-color: #333;
   color: var(--color-blanc);
   border: none;
 }
