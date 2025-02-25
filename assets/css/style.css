@@ -631,6 +631,24 @@ body.ClairSombre .button .svg {
   border: none;
 }
 
+.btn-accueil-contact {
+  background-color: var(--color-bleu-milieu);
+  border-radius: var(--radius-l);
+  padding: var(--padding-m);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  max-width: min-content;
+  margin: auto;
+  text-decoration: none;
+  font-family: var(--typo-titre);
+  color: black;
+  font-size: var(--typo-size-l);
+}
+body.ClairSombre .btn-accueil-contact {
+  color: white;
+}
+
 /* ---------------------------------------
                   IMAGES
 ----------------------------------------*/
