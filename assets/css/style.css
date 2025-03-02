@@ -642,11 +642,21 @@ body.ClairSombre .button .svg {
   margin: auto;
   text-decoration: none;
   font-family: var(--typo-titre);
-  color: black;
+  color: white;
   font-size: var(--typo-size-l);
 }
+
+.btn-accueil-contact:hover {
+  background-color: var(--color-bleu-fonce);
+}
+
 body.ClairSombre .btn-accueil-contact {
   color: white;
+}
+
+body.ClairSombre .btn-accueil-contact:hover {
+  background-color: var(--color-bleu-clair);
+  color: black;
 }
 
 /* ---------------------------------------
