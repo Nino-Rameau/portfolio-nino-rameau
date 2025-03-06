@@ -9,7 +9,8 @@
   --color-fond-barre-progress: #444444;
 
   /* type typo */
-  --typo-titre: "Orbitron", monospace;
+  --typo-titre: "Orbitron", monospace 
+  letter-spacing: 5rem;
   --typo-texte: "IBM Plex Mono", monospace;
 
   /* taille typo */

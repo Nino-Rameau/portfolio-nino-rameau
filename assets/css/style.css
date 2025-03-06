@@ -477,6 +477,7 @@ h1 {
   color: black;
   transition: 0.6s;
   box-shadow: var(--shadow-m-bleu-clair);
+  letter-spacing: 3px;
 }
 
 body.ClairSombre h1 {
@@ -508,6 +509,7 @@ body.ClairSombre h1:hover {
 
 h2 {
   font-size: var(--typo-size-xl);
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -759,4 +761,14 @@ body.ClairSombre .elt p a {
 
 .pas_point {
   list-style-type: none;
+}
+
+ul li {
+  font-family: var(--typo-texte);
+  font-size: var(--typo-size-s);
+  color: var(--color-noir);
+}
+
+body.ClairSombre ul li {
+  color: var(--color-blanc);
 }
